@@ -1,109 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NextWave Solutions | IT Services & Connectivity Experts</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-    <link rel="stylesheet" href="design.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Back to Top Button Preview</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="min-h-screen bg-gray-100">
 
-<body class="bg-gray-50 text-gray-800 font-sans">
-    <!-- Header -->
-    <header class="bg-white shadow-md py-6">
-        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-blue-700">NextWave Solutions</h1>
-            <nav class="space-x-6">
-                <a href="#services" class="text-gray-700 hover:text-blue-700 font-medium">Services</a>
-                <a href="#about" class="text-gray-700 hover:text-blue-700 font-medium">About</a>
-                <a href="#contact" class="text-gray-700 hover:text-blue-700 font-medium">Contact</a>
-            </nav>
-        </div>
-    </header>
+  <div class="max-w-2xl mx-auto p-8">
+    <h1 class="text-3xl font-bold mb-6">Scroll down to see the Back to Top button</h1>
+    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur purus et eros ullamcorper, in commodo nisi convallis. <!-- Repeated to create scroll -->
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur purus et eros ullamcorper, in commodo nisi convallis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur purus et eros ullamcorper, in commodo nisi convallis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur purus et eros ullamcorper, in commodo nisi convallis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur purus et eros ullamcorper, in commodo nisi convallis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur purus et eros ullamcorper, in commodo nisi convallis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur purus et eros ullamcorper, in commodo nisi convallis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur purus et eros ullamcorper, in commodo nisi convallis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur purus et eros ullamcorper, in commodo nisi convallis.</p>
+  </div>
 
-    <!-- Hero Section -->
-    <section class="bg-blue-700 text-white py-20 text-center">
-        <div class="max-w-3xl mx-auto px-4">
-            <h2 class="text-4xl font-bold mb-4">Empowering Your Business With Smart IT & Connectivity Solutions</h2>
-            <p class="text-lg">From lightning-fast Wi-Fi to secure door entry systems, we provide comprehensive tech services that keep your business connected and protected.</p>
-            <a href="#contact" class="mt-6 inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded shadow hover:bg-gray-100">Get a Free Consultation</a>
-        </div>
-    </section>
+  <button id="backToTop" class="fixed bottom-8 right-8 flex items-center bg-blue-700 text-white px-4 py-2 rounded shadow hover:bg-blue-800 transition" style="display:none;">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+    </svg>
+    Back to Top
+  </button>
 
-    <!-- Services Section -->
-    <section id="services" class="py-16 bg-gray-100">
-        <div class="max-w-7xl mx-auto px-4">
-            <h3 class="text-3xl font-bold text-center mb-12">Our Services</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Service Card 1 -->
-                <a href="/services/managed-it" class="relative bg-white rounded shadow overflow-hidden group service-card">
-                    <img src="https://via.placeholder.com/400x200?text=IT+Services" alt="Managed IT Services" class="w-full h-40 object-cover">
-                    <div class="p-4 text-center">
-                        <h4 class="text-xl font-semibold">Managed IT Services</h4>
-                    </div>
-                    <div class="absolute inset-0 bg-white bg-opacity-90 p-6 flex items-center justify-center service-overlay">
-                        <p class="text-center text-gray-700">Full-service IT support including network management, hardware setup, and software solutions tailored to your business needs.</p>
-                    </div>
-                </a>
-
-                <!-- Service Card 2 -->
-                <a href="/services/wifi-solutions" class="relative bg-white rounded shadow overflow-hidden group service-card">
-                    <img src="https://via.placeholder.com/400x200?text=WiFi+Solutions" alt="Wi-Fi Solutions" class="w-full h-40 object-cover">
-                    <div class="p-4 text-center">
-                        <h4 class="text-xl font-semibold">Wi-Fi Solutions</h4>
-                    </div>
-                    <div class="absolute inset-0 bg-white bg-opacity-90 p-6 flex items-center justify-center service-overlay">
-                        <p class="text-center text-gray-700">Reliable, high-speed Wi-Fi installation and optimization for commercial spaces, hotels, offices, and more.</p>
-                    </div>
-                </a>
-
-                <!-- Service Card 3 -->
-                <a href="/services/door-entry" class="relative bg-white rounded shadow overflow-hidden group service-card">
-                    <img src="https://via.placeholder.com/400x200?text=Door+Entry" alt="Door Entry Systems" class="w-full h-40 object-cover">
-                    <div class="p-4 text-center">
-                        <h4 class="text-xl font-semibold">Door Entry Systems</h4>
-                    </div>
-                    <div class="absolute inset-0 bg-white bg-opacity-90 p-6 flex items-center justify-center service-overlay">
-                        <p class="text-center text-gray-700">Advanced access control and intercom systems designed for both residential and commercial security.</p>
-                    </div>
-                </a>
-
-                <!-- Service Card 4 -->
-                <a href="/services/telecom" class="relative bg-white rounded shadow overflow-hidden group service-card">
-                    <img src="https://via.placeholder.com/400x200?text=Telecoms" alt="Telecommunications" class="w-full h-40 object-cover">
-                    <div class="p-4 text-center">
-                        <h4 class="text-xl font-semibold">Telecommunications</h4>
-                    </div>
-                    <div class="absolute inset-0 bg-white bg-opacity-90 p-6 flex items-center justify-center service-overlay">
-                        <p class="text-center text-gray-700">Hosted VoIP, phone lines, broadband, and mobile plans using trusted providers like Virgin Media and 4Com.</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-16">
-        <div class="max-w-5xl mx-auto px-4 text-center">
-            <h3 class="text-3xl font-bold mb-4">Why Choose NextWave Solutions?</h3>
-            <p class="text-lg">With years of experience and partnerships with industry leaders like Virgin Media, 4Com, and BT, we ensure your infrastructure is robust, secure, and future-proof. Our mission is to simplify technology so you can focus on what matters: growing your business.</p>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="bg-blue-700 text-white py-16">
-        <div class="max-w-3xl mx-auto px-4 text-center">
-            <h3 class="text-3xl font-bold mb-4">Let’s Talk</h3>
-            <p class="mb-8">Ready to upgrade your connectivity and tech infrastructure? Contact our team today and take the first step toward a smarter business.</p>
-            <a href="mailto:info@nextwavesolutions.co.uk" class="bg-white text-blue-700 px-6 py-3 rounded font-semibold hover:bg-gray-100">Email Us</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-300 py-6 text-center">
-        <p>&copy; 2025 NextWave Solutions. All rights reserved.</p>
-    </footer>
+  <script>
+    const btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 200) {
+        btn.style.display = 'flex';
+      } else {
+        btn.style.display = 'none';
+      }
+    });
+    btn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
 </body>
-
 </html>
