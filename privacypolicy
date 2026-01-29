@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecSecSolution | IT Services & Connectivity Experts</title>
+   <link rel="icon" href="media/LOGO.jpg" type="image/png" />
+    <link rel="stylesheet" href="design.css">
+</head>
+<!-- Loader -->
+<div id="loader">
+    <img src="media/LOGO.jpg" alt="Logo" />
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar">0%</div>
+    </div>
+</div>
+<header class="bg-white shadow">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <!-- Logo -->
+   <a href="index"<h1 class="text-2xl font-bold text-black -700 flex items-center gap-2" class="text-2xl font-bold text-black -700 flex items-center gap-2">
+  <img src="media/LOGOsmall.png" alt="TecSecSolution Logo" class="w-6 h-6" />
+  TecSecSolution
+</h1 class="text-2xl font-bold text-black -700 flex items-center gap-2"></a>
+
+    <!-- Hamburger Button (Mobile) -->
+    <button id="menu-toggle" class="md:hidden text-2xl text-gray-700 focus:outline-none">
+      ☰
+    </button>
+
+    <!-- Main Nav (Desktop) -->
+    <nav id="nav-menu" class="hidden md:flex space-x-6 items-center">
+      <a href="/index" class="text-gray-700 hover:text-blue-700 font-medium">Home</a>
+
+      <!-- Desktop Services Dropdown -->
+      <div class="relative group inline-block">
+  <button class="text-gray-700 hover:text-blue-700 font-medium focus:outline-none">
+    Services
+  </button>
+  <div class="submenu rounded shadow-md" id="desktop-services-submenu" tabindex="-1">
+    <a href="/managed-it" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Managed IT</a>
+    <a href="/wifi-solutions" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">WIFI</a>
+    <a href="/Home-IT" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Home IT & Tech Setup</a>
+    <a href="/CCTV" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">CCTV</a>
+    <a href="/Alarm" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Alarm System</a>
+    <a href="/door" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Door Entry System</a>
+  </div>
+</div>
+
+      <a href="#about" class="text-gray-700 hover:text-blue-700 font-medium">About</a>
+      <a href="#contact" class="text-gray-700 hover:text-blue-700 font-medium">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
+    <a href="/index" class="block text-gray-700 hover:text-blue-700 font-medium">Home</a>
+
+    <!-- Mobile Services Toggle -->
+    <div>
+      <button id="mobile-services-toggle" class="w-full text-left text-gray-700 hover:text-blue-700 font-medium">
+        Services ▼
+      </button>
+      <div id="mobile-services-menu" class="hidden mt-2 pl-4 space-y-2">
+        <a href="/managed-it" class="block text-gray-700 hover:text-blue-700 text-sm">Managed IT</a>
+        <a href="/wifi-solutions" class="block text-gray-700 hover:text-blue-700 text-sm">WIFI</a>
+        <a href="/Home-IT " class="block text-gray-700 hover:text-blue-700 text-sm">Home IT & Tech Setup</a>
+        <a href="/CCTV " class="block text-gray-700 hover:text-blue-700 text-sm">CCTV</a>
+        <a href="/Alarm " class="block text-gray-700 hover:text-blue-700 text-sm">Alarm System</a>
+        <a href="/door" class="block text-gray-700 hover:text-blue-700 text-sm">Door Entry System</a>
+      </div>
+    </div>
+
+    <a href="#about" class="block text-gray-700 hover:text-blue-700 font-medium">About</a>
+    <a href="#contact" class="block text-gray-700 hover:text-blue-700 font-medium">Contact</a>
+  </div>
+</header>
+
+
+   
+
+<!-- Services Section -->
+<section id="services" class="py-1 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-12">Privacy Policy</h3>
+</section>
+
+
+
+
+
+      <!-- Section 2:  -->
+      <div class="w-full md:flex-[3] 50 p-4 rounded shadow">
+       <section class="p-4">
+  
+  <section style="font-family: Arial, sans-serif; max-width: 600px;">
+  <h1 class="text-2xl font-bold text-black -700 flex items-center gap-2" style="font-size: 1.75rem; font-weight: bold; margin-bottom: 1rem;"></h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">
+  <p style="margin-bottom: 1rem;">
+    
+  
+  <p><strong>Last updated:</strong> 01-01-2026</p>
+
+  <p>
+    TecSec Solution ("we", "us", "our") is committed to protecting and respecting your privacy.
+    This Privacy Policy explains how we collect, use, store, share, and protect personal data when
+    you interact with us, use our website <strong>https://tecsecsolution.co.uk</strong>, engage with
+    our services, or communicate with us via any channel, including social media advertising platforms.
+  </p>
+
+  <p>
+    This policy is designed to comply with the UK General Data Protection Regulation (UK GDPR),
+    the Data Protection Act 2018, the Privacy and Electronic Communications Regulations (PECR),
+    and all other applicable UK data protection laws.
+  </p>
+
+  <h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">1. Who We Are</h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">
+  <p><strong>Business name:</strong> TecSec Solution</p>
+  <p><strong>Website:</strong> https://tecsecsolution.co.uk</p>
+  <p><strong>Services:</strong> IT support, managed IT services, network management, WiFi solutions, CCTV systems, alarm systems, door entry systems, and related technology services.</p>
+  <p>TecSec Solution acts as the <strong>Data Controller</strong> for the personal data we collect and process.</p>
+
+  <h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">2. Personal Data We Collect</h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">
+
+  <h3>2.1 Information You Provide Directly</h3>
+  <ul>
+    <li>Full name</li>
+    <li>Business name</li>
+    <li>Job title</li>
+    <li>Email address</li>
+    <li>Telephone number</li>
+    <li>Postal address</li>
+    <li>Enquiry details and message content</li>
+    <li>Account and billing information</li>
+    <li>Any information voluntarily provided during consultations or communications</li>
+  </ul>
+
+  <h3>2.2 Social Media & Advertising Data</h3>
+  <p>
+    When you interact with our adverts or lead forms on platforms such as Facebook, Instagram,
+    LinkedIn, or other advertising networks, we may collect:
+  </p>
+  <ul>
+    <li>Name</li>
+    <li>Email address</li>
+    <li>Telephone number</li>
+    <li>Company name</li>
+    <li>Job role</li>
+    <li>Location (city or region)</li>
+    <li>Responses submitted through lead forms</li>
+    <li>Advertising interaction data</li>
+  </ul>
+
+  <h3>2.3 Automatically Collected Data</h3>
+  <ul>
+    <li>IP address</li>
+    <li>Browser type and version</li>
+    <li>Operating system</li>
+    <li>Device information</li>
+    <li>Referring URLs</li>
+    <li>Pages visited and time spent on pages</li>
+    <li>Date and time of access</li>
+  </ul>
+
+  <h3>2.4 Cookies</h3>
+  <p>
+    We use cookies and similar technologies to improve website functionality, analyse traffic,
+    and support marketing campaigns. Please refer to our Cookie Policy for more information.
+  </p>
+
+  <h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">3. How We Use Your Personal Data</h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">
+  <ul>
+    <li>To respond to enquiries and provide requested information</li>
+    <li>To deliver and manage our services</li>
+    <li>To manage customer relationships and contracts</li>
+    <li>To provide technical support</li>
+    <li>To process billing and payments</li>
+    <li>To improve our website and services</li>
+    <li>To send service-related communications</li>
+    <li>To conduct marketing activities where permitted</li>
+    <li>To comply with legal and regulatory obligations</li>
+    <li>To protect our business, systems, and customers</li>
+  </ul>
+
+  <h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">4. Lawful Basis for Processing</h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">
+  <ul>
+    <li><strong>Consent</strong> – where you have given clear permission</li>
+    <li><strong>Contract</strong> – where processing is necessary to fulfil a contract</li>
+    <li><strong>Legal obligation</strong> – where required by law</li>
+    <li><strong>Legitimate interests</strong> – where necessary for our business operations</li>
+  </ul>
+
+  <h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">5. Marketing Communications</h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">
+  <p>
+    We may contact you for marketing purposes where permitted by law. You may opt out at any time
+    by using the unsubscribe link or contacting us directly. Opting out will not affect service
+    communications.
+  </p>
+
+  <h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">6. Data Sharing</h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">
+  <p>We do not sell personal data. We may share data with trusted third parties such as:</p>
+  <ul>
+    <li>IT and cloud service providers</li>
+    <li>CRM and customer management platforms</li>
+    <li>Payment and accounting providers</li>
+    <li>Marketing and advertising platforms</li>
+    <li>Legal or professional advisers</li>
+  </ul>
+
+  <h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">7. International Transfers</h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">
+  <p>
+    Where data is transferred outside the UK, appropriate safeguards are implemented in accordance
+    with UK GDPR requirements.
+  </p>
+
+  <h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">8. Data Security</h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">
+  <p>
+    We implement appropriate technical and organisational measures to protect personal data,
+    including access controls, secure storage, and network security practices.
+  </p>
+
+  <h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">9. Data Retention</h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">
+  <p>
+    Personal data is retained only for as long as necessary to fulfil the purposes outlined in
+    this policy or to meet legal obligations.
+  </p>
+
+  <h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">10. Your Rights</h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">
+  <ul>
+    <li>Right to access your data</li>
+    <li>Right to rectification</li>
+    <li>Right to erasure</li>
+    <li>Right to restrict processing</li>
+    <li>Right to object</li>
+    <li>Right to data portability (where applicable)</li>
+    <li>Right to withdraw consent</li>
+  </ul>
+
+  <h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">11. Complaints</h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">
+  <p>
+    You have the right to lodge a complaint. Conatct us via privacycomplaints@tecsecsolution.co.uk
+  </p>
+
+  <h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">12. Third-Party Links</h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">
+  <p>
+    Our website may contain links to third-party websites. We are not responsible for their
+    privacy practices.
+  </p>
+
+  <h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">13. Changes to This Policy</h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">
+  <p>
+    We may update this Privacy Policy from time to time. The latest version will always be
+    published on our website.
+  </p>
+
+  <h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">14. Contact Us</h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">
+  <p>
+    For questions regarding this Privacy Policy or your personal data, please contact us via
+    our website: https://tecsecsolution.co.uk
+  </p>
+      
+
+  
+      
+
+    </div>
+  </div>
+
+
+</section>
+	
+
+    <!-- About Section -->
+    <section id="about" class="py-16">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold mb-4">Why Choose TecSecSolution?</h3>
+            <p class="text-lg">As a start-up with over a decade of combined industry experience, we bring fresh energy and expert knowledge to every job. We pride ourselves on delivering tailored solutions that fit your needs not a one-size-fits-all package. With TecSecSolution,No hidden catches. Just honest, reliable service you can trust, with full ownership and control in your hands.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-black -700 text-white py-16">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold mb-4">Let’s Talk</h3>
+            <p class="mb-8">Ready to upgrade your connectivity and tech infrastructure? Contact the TSS team today and take the first step towards finding the best solution for you.</p>
+            <a class="js-hover-swap bg-white text-black px-6 py-3 rounded font-semibold hover:bg-gray-100"
+  href="mailto:Hello@tecsecsolution.co.uk"
+  data-default="Email Us"
+  data-hover="Hello@tecsecsolution.co.uk"
+  data-hover-color="blue"
+  data-default-color="black"
+>Email Us</a>
+
+<a class="js-hover-swap bg-white text-black px-6 py-3 rounded font-semibold hover:bg-gray-100"
+  href="tel:07343045849"
+  data-default="Call Us"
+  data-hover="07343 045849"
+  data-hover-color="green"
+  data-default-color="black">Call Us</a>
+		
+		</div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-6 text-center">
+        <p>&copy; 2025 TecSecSolution. All rights reserved.</p>
+    </footer>
+	<script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
