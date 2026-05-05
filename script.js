@@ -1,24 +1,10 @@
-//Hover for Emial and Call Us button
-document.addEventListener("DOMContentLoaded", function () {
-  const buttons = document.querySelectorAll(".js-hover-swap");
 
-  buttons.forEach((btn) => {
-    const defaultText = btn.dataset.default;
-    const hoverText = btn.dataset.hover;
-    const defaultColor = btn.dataset.defaultColor;
-    const hoverColor = btn.dataset.hoverColor;
 
-    btn.addEventListener("mouseenter", () => {
-      btn.textContent = hoverText;
-      btn.style.color = hoverColor;
-    });
 
-    btn.addEventListener("mouseleave", () => {
-      btn.textContent = defaultText;
-      btn.style.color = defaultColor;
-    });
-  });
-});
+
+
+
+
 // Progress bar 
 
 let progress = 0;
@@ -64,6 +50,8 @@ let interval = setInterval(() => {
   servicesToggle.addEventListener('click', () => {
     servicesMenu.classList.toggle('hidden');
   });
+
+
 // Desktop click toggle for submenu
   const desktopBtn = document.getElementById('desktop-services-btn');
 const desktopMenu = document.getElementById('desktop-services-submenu');
@@ -94,5 +82,39 @@ document.addEventListener('click', (e) => {
     }
   });
 
+// Hover for Email and Call Us button
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".js-hover-swap");
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("mouseenter", () => {
+      btn.textContent = btn.dataset.hover;
+    });
+
+    btn.addEventListener("mouseleave", () => {
+      btn.textContent = btn.dataset.default;
+    });
+  });
+});
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".js-hover-swap");
+
+  buttons.forEach((btn) => { 
+    const defaultText = btn.dataset.default;
+    const hoverText = btn.dataset.hover;
+    const defaultColor = btn.dataset.defaultColor;
+    const hoverColor = btn.dataset.hoverColor;
+
+    btn.addEventListener("mouseenter", () => {
+      btn.textContent = hoverText;
+      btn.style.color = hoverColor;
+    });
+
+    btn.addEventListener("mouseleave", () => {
+      btn.textContent = defaultText;
+      btn.style.color = defaultColor;
+    });
+  });
+});
