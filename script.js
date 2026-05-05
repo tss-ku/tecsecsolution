@@ -66,8 +66,9 @@ let interval = setInterval(() => {
   });
 // Desktop click toggle for submenu
   const desktopBtn = document.getElementById('desktop-services-btn');
-  const desktopMenu = document.getElementById('desktop-services-submenu');
+const desktopMenu = document.getElementById('desktop-services-submenu');
 
+if (desktopBtn && desktopMenu) {
   desktopBtn.addEventListener('click', (e) => {
     e.preventDefault();
     if (desktopMenu.style.display === 'block') {
@@ -77,6 +78,14 @@ let interval = setInterval(() => {
       desktopMenu.focus();
     }
   });
+}
+document.addEventListener('click', (e) => {
+  const wrapper = document.getElementById('desktop-services');
+
+  if (wrapper && !wrapper.contains(e.target)) {
+    desktopMenu.style.display = 'none';
+  }
+});
 
   // Optional: close desktop submenu if clicked outside
   document.addEventListener('click', (e) => {
