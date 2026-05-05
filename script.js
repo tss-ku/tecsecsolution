@@ -67,13 +67,7 @@ if (desktopBtn && desktopMenu) {
     }
   });
 }
-document.addEventListener('click', (e) => {
-  const wrapper = document.getElementById('desktop-services');
 
-  if (wrapper && !wrapper.contains(e.target)) {
-    desktopMenu.style.display = 'none';
-  }
-});
 
   // Optional: close desktop submenu if clicked outside
   document.addEventListener('click', (e) => {
@@ -117,4 +111,52 @@ document.addEventListener("DOMContentLoaded", function () {
       btn.style.color = defaultColor;
     });
   });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  // =========================
+  // SAFE GET
+  // =========================
+  const get = (id) => document.getElementById(id);
+
+  // =========================
+  // MOBILE MENU
+  // =========================
+  const menuToggle = get('menu-toggle');
+  const mobileMenu = get('mobile-menu');
+
+  if (menuToggle && mobileMenu) {
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+    });
+  }
+
+  // =========================
+  // MOBILE SERVICES
+  // =========================
+  const servicesToggle = get('mobile-services-toggle');
+  const servicesMenu = get('mobile-services-menu');
+
+  if (servicesToggle && servicesMenu) {
+    servicesToggle.addEventListener('click', () => {
+      servicesMenu.classList.toggle('active');
+    });
+  }
+
+  // =========================
+  // DESKTOP MENU SAFETY (NO CRASH)
+  // =========================
+  const desktopMenu = get('desktop-services-submenu');
+  const desktopWrapper = get('desktop-services');
+
+  document.addEventListener('click', (e) => {
+    if (!desktopMenu || !desktopWrapper) return;
+
+    if (!desktopWrapper.contains(e.target)) {
+      desktopMenu.style.display = 'none';
+    }
+  });
+
 });
