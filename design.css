@@ -707,3 +707,82 @@ footer a:hover {
       padding-top: 15rem;
     }
   }
+
+
+
+/* ==============================
+   FORCE IMAGE TO 250x250 (REAL FIX)
+   ============================== */
+
+/* Main flex container */
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .flex {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+/* ==============================
+   IMAGE BOX (TARGETED CORRECTLY)
+   ============================== */
+
+.service-image {
+
+  margin-top: 150px;
+
+  flex: 0 0 650px !important;
+  width: 250px !important;
+  max-width: 650px !important;
+  min-width: 650px !important;
+
+  height: 550px !important;
+  overflow: hidden;
+
+  border-radius: 8px;
+}
+
+/* Image inside */
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==============================
+   TEXT SIDE FIX
+   ============================== */
+
+.service-content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* IMPORTANT: override Tailwind width */
+.service-content .w-full {
+  width: auto !important;
+}
+
+.service-content .md\:w-2\/3 {
+  width: auto !important;
+}
+
+/* ==============================
+   MOBILE FIX
+   ============================== */
+
+@media (max-width: 768px) {
+  .service-image {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    height: 200px !important;
+  }
+}
