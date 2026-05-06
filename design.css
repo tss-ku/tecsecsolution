@@ -324,8 +324,15 @@ nav#nav-menu button:hover {
    HERO
 ========================= */
 .bg-image {
-    background: url("media/BANNER.webp") center/cover no-repeat;
+    background: #000; /* default = mobile fallback */
     color: #fff;
+}
+
+/* Desktop (image enabled) */
+@media (min-width: 768px) {
+    .bg-image {
+        background: url("media/BANNER.webp") center/cover no-repeat;
+    }
 }
 
 .bg-image h2 {
@@ -336,7 +343,6 @@ nav#nav-menu button:hover {
 .bg-image p {
     font-size: 18px;
 }
-
 /* =========================
    BUTTONS
 ========================= */
