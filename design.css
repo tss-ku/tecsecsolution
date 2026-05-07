@@ -819,3 +819,63 @@ footer a:hover {
   background: #f2f2f2;
   transform: translateY(-2px);
 }
+/* ==============================
+   Engineer Services
+   ============================== */
+
+
+
+    /* HERO */
+    .hero{
+      background:linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.85)),
+      url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      color:#fff;
+      padding:10px 0;
+    }
+
+    .hero-content{
+      max-width:700px;
+    }
+
+    .hero h1{
+      font-size:48px;
+      line-height:1.1;
+      margin-bottom:25px;
+      font-weight:800;
+    }
+
+    .hero p{
+      font-size:20px;
+      margin-bottom:35px;
+      color:#cbd5e1;
+    }
+
+    
+  
+
+  
+
+    .features li{
+      list-style:none;
+      margin-bottom:12px;
+      color:#e2e8f0;
+    }
+/* Typing Effect Without Visible Cursor */
+.typing-effect {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 8s steps(40, end) forwards;
+}
+
+/* Typing Animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
