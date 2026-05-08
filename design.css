@@ -879,3 +879,127 @@ footer a:hover {
         width: 100%;
     }
 }
+
+/* ==============================
+   Cyber security page
+   ============================== */
+
+
+/* ABOUT */
+
+.about{
+    background:#020617;
+    color:#fff;
+}
+
+.about-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:20px;
+}
+
+.about h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.about p{
+    color:#cbd5e1;
+    margin-bottom:20px;
+}
+
+.features{
+    margin-top:30px;
+}
+
+.features li{
+    list-style:none;
+    margin-bottom:14px;
+    color:#e2e8f0;
+}
+
+/* BENEFITS */
+
+.benefits{
+    background:#fff;
+}
+
+.benefits-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.benefit-card{
+    background:#f8fafc;
+    padding:30px;
+    border-radius:18px;
+    border-left:5px solid Black;
+}
+
+.benefit-card h3{
+    margin-bottom:15px;
+    color:#020617;
+}
+
+/* PROCESS */
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.process-card{
+    background:#fff;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,9.08);
+
+}
+
+.process-number{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:Black;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+    font-weight:700;
+        margin:auto auto 20px;
+}
+
+
+/* SECTION */
+
+section{
+    padding:10px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.section-title h2{
+    font-size:42px;
+    color:#020617;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    max-width:720px;
+    margin:auto;
+    color:#64748b;
+}
+
