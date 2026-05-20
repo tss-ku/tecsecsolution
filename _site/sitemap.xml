@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+
+<url>
+  <loc>https://tecsecsolution.co.uk/</loc>
+  <lastmod>2025-08-19T14:51:34+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://tecsecsolution.co.uk/index</loc>
+  <lastmod>2025-08-19T14:51:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tecsecsolution.co.uk/managed-it</loc>
+  <lastmod>2025-08-19T14:51:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tecsecsolution.co.uk/wifi-solutions</loc>
+  <lastmod>2025-08-19T14:51:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tecsecsolution.co.uk/Home-IT</loc>
+  <lastmod>2025-08-19T14:51:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tecsecsolution.co.uk/CCTV</loc>
+  <lastmod>2025-08-19T14:51:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tecsecsolution.co.uk/Alarm</loc>
+  <lastmod>2025-08-19T14:51:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tecsecsolution.co.uk/door</loc>
+  <lastmod>2025-08-19T14:51:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+      <url>
+  <loc>https://tecsecsolution.co.uk/AV</loc>
+  <lastmod>2026-05-08T14:51:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+  
+      <url>
+  <loc>https://tecsecsolution.co.uk/CyberSecurity</loc>
+  <lastmod>2026-05-08T14:51:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+            <url>
+  <loc>https://tecsecsolution.co.uk/Engineer</loc>
+  <lastmod>2026-05-08T14:51:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+        
+
+</urlset>

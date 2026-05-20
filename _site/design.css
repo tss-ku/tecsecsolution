@@ -1,0 +1,1005 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #111;
+}
+
+/* =========================
+   LAYOUT / CONTAINERS
+========================= */
+.container,
+.max-w-7xl {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.max-w-3xl {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* =========================
+   SPACING
+========================= */
+.px-4 { padding: 0 16px; }
+.py-4 { padding: 16px 0; }
+.py-6 { padding: 24px 0; }
+.py-16 { padding: 64px 0; }
+.py-20 { padding: 80px 0; }
+
+.p-4 { padding: 16px; }
+.p-6 { padding: 24px; }
+
+.mt-2 { margin-top: 8px; }
+.mt-6 { margin-top: 24px; }
+.mb-4 { margin-bottom: 16px; }
+.mb-8 { margin-bottom: 32px; }
+.mb-12 { margin-bottom: 48px; }
+
+.mr-4 { margin-right: 16px; }
+
+/* =========================
+   FLEX / GRID
+========================= */
+.flex { display: flex; }
+.block { display: block; }
+.inline-block { display: inline-block; }
+
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.justify-center { justify-content: center; }
+
+.grid {
+    display: grid;
+    gap: 30px;
+}
+
+.grid-cols-1 { grid-template-columns: 1fr; }
+
+@media (min-width: 768px) {
+    .md\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+    .md\:flex { display: flex; }
+    .md\:hidden { display: none; }
+}
+
+@media (min-width: 1024px) {
+    .lg\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* =========================
+   TEXT
+========================= */
+.text-center { text-align: center; }
+
+.text-2xl { font-size: 22px; font-weight: 700; }
+.text-3xl { font-size: 32px; font-weight: 700; }
+.text-xl { font-size: 20px; font-weight: 600; }
+.text-lg { font-size: 16px; }
+
+.text-sm { font-size: 14px; }
+
+.font-bold { font-weight: 700; }
+.font-semibold { font-weight: 600; }
+
+/* =========================
+   COLORS
+========================= */
+.bg-white { background: #fff; }
+.bg-black { background: #000; }
+.bg-gray-100 { background: #f5f5f5; }
+.bg-gray-800 { background: #1f2937; }
+
+.text-white { color: #fff; }
+.text-black { color: #000; }
+.text-gray-700 { color: #555; }
+.text-gray-300 { color: #d1d5db; }
+
+/* =========================
+   HOVER
+========================= */
+.hover\:bg-gray-100:hover { background: #f5f5f5; }
+.hover\:text-blue-700:hover { color: #2563eb; }
+.hover\:text-white:hover { color: #fff; }
+
+/* =========================
+   NAVBAR (FIXED PROPERLY)
+========================= */
+
+/* =========================
+   NAVBAR BASE
+========================= */
+
+header {
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    position: relative;
+    z-index: 1000;
+    padding: 14px 0;
+}
+
+/* container */
+header .max-w-7xl {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+header h1 {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #111;
+    transition: color 0.2s ease;
+}
+
+header h1:hover {
+    color: #2563eb;
+}
+
+header h1 img {
+    width: 24px;
+    height: 24px;
+}
+
+/* =========================
+   DESKTOP NAV
+========================= */
+
+nav#nav-menu {
+    display: flex !important;
+    align-items: center;
+    gap: 24px;
+}
+
+/* links + buttons */
+nav#nav-menu a,
+nav#nav-menu button {
+    font-size: 15px;
+    font-weight: 550;
+    color: grey;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 10px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+/* hover (BLUE + subtle background) */
+nav#nav-menu a:hover,
+nav#nav-menu button:hover {
+    color: #2563eb;
+    background: #f3f4f6;
+}
+
+/* =========================
+   DROPDOWN (FLOATING MENU)
+========================= */
+
+.relative {
+    position: relative;
+}
+
+/* hidden by default */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    min-width: 220px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+    padding: 8px 0;
+    z-index: 9999;
+}
+
+/* show on hover */
+.group:hover .submenu,
+.group:focus-within .submenu {
+    display: block;
+}
+
+/* dropdown links */
+.submenu a {
+    display: block;
+    padding: 10px 14px;
+    font-size: 14px;
+    color: #111;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+/* dropdown hover */
+.submenu a:hover {
+    background: #f3f4f6;
+    color: #2563eb;
+}
+
+/* =========================
+   MOBILE NAV
+========================= */
+
+#menu-toggle {
+    font-size: 26px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+/* mobile menu */
+#mobile-menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 16px;
+}
+
+/* active mobile menu (JS controlled) */
+#mobile-menu.active {
+    display: flex;
+}
+
+/* mobile links */
+#mobile-menu a,
+#mobile-menu button {
+    font-size: 15px;
+    padding: 8px 0;
+    text-align: left;
+    background: none;
+    border: none;
+    color: #111;
+    transition: color 0.2s ease;
+}
+
+/* mobile hover */
+#mobile-menu a:hover,
+#mobile-menu button:hover {
+    color: #2563eb;
+}
+
+/* mobile submenu */
+#mobile-services-menu {
+    display: none;
+    padding-left: 12px;
+}
+
+#mobile-services-menu.active {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    nav#nav-menu {
+        display: none !important;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+}
+
+/* =========================
+   RESPONSIVE RULES
+========================= */
+
+@media (max-width: 768px) {
+
+    nav#nav-menu {
+        display: none !important;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+}
+/* =========================
+   HERO
+========================= */
+.bg-image {
+    background: #000; /* default = mobile fallback */
+    color: #fff;
+}
+
+/* Desktop (image enabled) */
+@media (min-width: 768px) {
+    .bg-image {
+        background: url("media/BANNER.webp") center/cover no-repeat;
+    }
+}
+
+.bg-image h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.bg-image p {
+    font-size: 18px;
+}
+/* =========================
+   BUTTONS
+========================= */
+
+
+/* =========================
+   SERVICES (CORE DESIGN)
+========================= */
+/* SECTION */
+#contact {
+  background: #000;
+  color: #fff;
+  padding: 64px 16px;
+}
+
+#contact .max-w-3xl {
+  max-width: 768px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* TITLE + TEXT */
+#contact h3 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+#contact p {
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+/* FORCE BUTTONS SIDE BY SIDE */
+#contact .max-w-3xl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* BUTTON WRAPPER (creates horizontal row) */
+#contact a.js-hover-swap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: white;
+  color: black;
+
+  padding: 10px 18px;
+  margin: 8px;
+
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+
+  width: 160px;              /* SMALL DEFAULT SIZE */
+  height: 44px;
+
+  overflow: hidden;
+
+  font-size: 0;              /* hide original text */
+  transition: all 0.25s ease;
+}
+
+/* KEEP BUTTONS IN A ROW */
+#contact .buttons-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: nowrap; /* forces horizontal */
+}
+
+/* GROW ON HOVER */
+#contact a.js-hover-swap:hover {
+  width: 240px;
+  height: 52px;
+  background: #f3f3f3;
+  transform: translateY(-2px);
+}
+
+/* DEFAULT TEXT */
+#contact a.js-hover-swap::before {
+  content: attr(data-default);
+  font-size: 15px;
+  position: absolute;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* HOVER TEXT */
+#contact a.js-hover-swap::after {
+  content: attr(data-hover);
+  font-size: 15px;
+  position: absolute;
+
+  opacity: 0;
+  transform: translateY(6px);
+
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* TEXT SWAP */
+#contact a.js-hover-swap:hover::before {
+  opacity: 0;
+  transform: translateY(-6px);
+}
+
+#contact a.js-hover-swap:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* OPTIONAL COLOUR ACCENTS */
+#contact a.js-hover-swap:hover[data-hover-color="blue"] {
+  color: blue;
+}
+
+#contact a.js-hover-swap:hover[data-hover-color="green"] {
+  color: green;
+}
+
+
+/* CARD */
+.service-card {
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+/* HOVER SCALE (you wanted this) */
+.service-card:hover {
+    transform: translateY(-6px) scale(1.03);
+}
+
+/* IMAGE WRAPPER */
+.service-image {
+    width: 100%;
+    height: 220px; /* single source of truth */
+    overflow: hidden;
+}
+
+/* IMAGE */
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* OVERLAY */
+.service-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+/* SHOW ON HOVER */
+.service-card:hover .service-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* REMOVE UNDERLINES */
+.service-card,
+.service-card h1,
+.service-card h2,
+.service-card h3,
+.service-card h4,
+.service-card p {
+    text-decoration: none;
+}
+
+/* REMOVE UNDERLINE FROM ALL TEXT INSIDE CARD */
+.service-card h1,
+.service-card h2,
+.service-card h3,
+.service-card h4,
+.service-card p {
+    text-decoration: none;
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+#contact {
+    background: #000;
+    color: #fff;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background: #1f2937;
+    color: #d1d5db;
+}
+
+footer a {
+    color: #d1d5db;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* =========================
+   UTILITIES
+========================= */
+.rounded { border-radius: 6px; }
+.shadow { box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+
+.w-full { width: 100%; }
+.w-6 { width: 24px; }
+.h-6 { height: 24px; }
+
+.h-300px { height: 220px; }
+
+.space-x-6 > * + * { margin-left: 24px; }
+.space-y-2 > * + * { margin-top: 8px; }
+
+.hidden { display: none; }
+
+/* =========================
+   LOADER
+========================= */
+#loader {
+    position: fixed;
+    inset: 0;
+    background: rgba(255,255,255,0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.progress-container {
+    width: 200px;
+    height: 20px;
+    background: #ddd;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #4caf50;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+}
+  body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    #loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+    #loader img {
+  width: 65vw;
+  height: 65vw;
+  max-width: 65vh;
+  max-height: 65vh;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+
+  /* Add mask gradient, initially fully transparent */
+  -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 0%);
+  mask-image: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 0%);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+    .progress-container {
+        width: 200px;
+        height: 20px;
+        background: #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .progress-bar {
+        height: 100%;
+        width: 0%;
+        background: #4caf50;
+        text-align: center;
+        color: white;
+        font-size: 12px;
+        line-height: 20px;
+        transition: width 0.1s ease;
+    }
+	
+	.bg-image {
+  background-image: url("media/BANNER.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+/* Proces flow on AV page annimation */
+
+
+.process-flow {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  margin-top:30px;
+}
+.flow-step {
+  background:#0a2a4a;
+  color:#fff;
+  padding:15px 25px;
+  border-radius:30px;
+  font-weight:bold;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.flow-step:hover {
+  transform: scale(1.05);
+  background:#007BFF;
+}
+.arrow {
+  font-size:24px;
+  font-weight:bold;
+  color:#007BFF;
+  animation: slide 1.5s infinite alternate;
+}
+@keyframes slide {
+  from {transform: translateX(0);}
+  to {transform: translateX(8px);}
+}
+
+
+/*Padding for image in services pages*/
+<style>
+  .image-padding-desktop {
+    padding-top: 0;
+  }
+  @media(min-width: 1024px) {
+    .image-padding-desktop {
+      padding-top: 15rem;
+    }
+  }
+
+
+
+/* ==============================
+   FORCE IMAGE TO 250x250 (REAL FIX)
+   ============================== */
+
+/* Main flex container */
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .flex {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+/* ==============================
+   IMAGE BOX (TARGETED CORRECTLY)
+   ============================== */
+
+.service-image {
+
+  margin-top: 150px;
+
+  flex: 0 0 650px !important;
+  width: 250px !important;
+  max-width: 650px !important;
+  min-width: 650px !important;
+
+  height: 550px !important;
+  overflow: hidden;
+
+  border-radius: 8px;
+}
+
+/* Image inside */
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==============================
+   TEXT SIDE FIX
+   ============================== */
+
+.service-content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* IMPORTANT: override Tailwind width */
+.service-content .w-full {
+  width: auto !important;
+}
+
+.service-content .md\:w-2\/3 {
+  width: auto !important;
+}
+
+/* ==============================
+   MOBILE FIX
+   ============================== */
+
+@media (max-width: 768px) {
+  .service-image {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    height: 200px !important;
+  }
+}
+/* ==============================
+   Consulation button
+   ============================== */
+
+.max-w-3xl a {
+  display: inline-block;
+  background: #ffffff;
+  color: #000000;
+
+  font-weight: 600;
+  font-size: 14px;
+
+  padding: 12px 24px;
+  margin-top: 24px;
+
+  border-radius: 8px;
+  text-decoration: none;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+  transition: all 0.25s ease;
+}
+
+.max-w-3xl a:hover {
+  background: #f2f2f2;
+  transform: translateY(-2px);
+}
+/* ==============================
+   Engineer Services
+   ============================== */
+
+
+
+    /* HERO */
+    .hero{
+      background:linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.85)),
+      url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      color:#fff;
+      padding:10px 0;
+    }
+
+    .hero-content{
+      max-width:700px;
+    }
+
+    .hero h1{
+      font-size:48px;
+      line-height:1.1;
+      margin-bottom:25px;
+      font-weight:800;
+    }
+
+    .hero p{
+      font-size:20px;
+      margin-bottom:35px;
+      color:#cbd5e1;
+    }
+
+    
+  
+
+  
+
+    .features li{
+      list-style:none;
+      margin-bottom:12px;
+      color:#e2e8f0;
+    }
+/* Typing Effect Without Visible Cursor */
+.typing-effect {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 8s steps(40, end) forwards;
+}
+
+/* Typing Animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* ==============================
+   Cyber security page
+   ============================== */
+
+
+/* ABOUT */
+
+.about{
+    background:#020617;
+    color:#fff;
+}
+
+.about-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:20px;
+}
+
+.about h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.about p{
+    color:#cbd5e1;
+    margin-bottom:20px;
+}
+
+.features{
+    margin-top:30px;
+}
+
+.features li{
+    list-style:none;
+    margin-bottom:14px;
+    color:#e2e8f0;
+}
+
+/* BENEFITS */
+
+.benefits{
+    background:#fff;
+}
+
+.benefits-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.benefit-card{
+    background:#f8fafc;
+    padding:30px;
+    border-radius:18px;
+    border-left:5px solid Black;
+}
+
+.benefit-card h3{
+    margin-bottom:15px;
+    color:#020617;
+}
+
+/* PROCESS */
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.process-card{
+    background:#fff;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,9.08);
+
+}
+
+.process-number{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:Black;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+    font-weight:700;
+        margin:auto auto 20px;
+}
+
+
+/* SECTION */
+
+section{
+    padding:10px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.section-title h2{
+    font-size:42px;
+    color:#020617;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    max-width:720px;
+    margin:auto;
+    color:#64748b;
+}
+
