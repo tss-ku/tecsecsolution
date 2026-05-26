@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TecSecSolution | IT Services & Connectivity Experts</title>
  <link rel="icon" href="media/LOGO.webp" type="image/png" />
-    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="{{ '/design.css' | relative_url }}">
 </head>
 <!-- Loader -->
 <div id="loader">
-    <img src="media/LOGO.webp" alt="Logo" />
+    <img src="{{ '/media/LOGO.webp' | relative_url }}" alt="TecSecsolutionLogo" />
     <div class="progress-container">
         <div class="progress-bar" id="progress-bar">0%</div>
     </div>
 </div>
 <header class="bg-white shadow">
   <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-    <!-- Logo -->
+     <!-- Logo -->
     <a href="/index"<h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">
-  <img src="media/LOGOsmall.webp" alt="TecSecSolution Logo" class="w-6 h-6" />
+  <img src="{{ '/media/LOGOsmall.webp' | relative_url }}" alt="TecSecsolutionLogo" class="w-6 h-6" />
   <h1>TecSecSolution
 </h1></a>
 
@@ -52,7 +52,7 @@
 </div>
 
       <a href="#about" class="text-gray-700 hover:text-blue-700 font-medium">About</a>
-      <a href="#contact" class="text-gray-700 hover:text-blue-700 font-medium">Contact Us</a>
+      <a href="#contact" class="text-gray-700 hover:text-blue-700 font-medium">Contact</a>
     </nav>
   </div>
 
@@ -81,6 +81,6 @@
 
 
     <a href="#about" class="block text-gray-700 hover:text-blue-700 font-medium">About</a>
-    <a href="#contact" class="block text-gray-700 hover:text-blue-700 font-medium">Contact US</a>
+    <a href="#contact" class="block text-gray-700 hover:text-blue-700 font-medium">Contact</a>
   </div>
 </header>
