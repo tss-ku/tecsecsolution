@@ -1,8 +1,3 @@
----
----
-
-
-{% include TecSecSolutionHeader.html %}
 
 
   <h1>VoIP vs Traditional Phone Systems: Why UK Businesses Must Prepare for the Copper Switch-Off</h1>
