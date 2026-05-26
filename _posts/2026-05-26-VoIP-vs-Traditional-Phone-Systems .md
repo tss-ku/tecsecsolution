@@ -231,8 +231,7 @@
     </li>
   </ul>
 
-{% include TecSecSolutionFooter.html %}
-	<script src="script.js"></script>
+
 </body>
 
 
