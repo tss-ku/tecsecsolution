@@ -1,22 +1,50 @@
 ---
+title: Blog
 ---
 
+
+
+
 {% include TecSecSolutionHeader.html %}
+<section class="blog-page">
 
- <h1>Latest Blog Posts</h1>
+    <div class="container">
 
-{% for post in site.posts %}
-  <article style="margin-bottom:20px;">
-    <h2>
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title }}
-      </a>
-    </h2>
+        <h1 class="page-title">TecSecSolution Blog</h1>
 
-    <small>{{ post.date | date: "%d %B %Y" }}</small>
+        <div class="blog-grid">
 
-    
-  </article>
-{% endfor %}
+            {% for post in site.posts %}
+
+            <article class="blog-card">
+
+                <div class="blog-card-content">
+
+                    <h2 class="blog-title">
+                        <a href="{{ post.url | relative_url }}">
+                            {{ post.title }}
+                        </a>
+                    </h2>
+
+                    <p class="blog-preview">
+                        {{ post.featured_paragraph }}
+                    </p>
+
+                    <a class="read-more-btn" href="{{ post.url | relative_url }}">
+                        Read More
+                    </a>
+
+                </div>
+
+            </article>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>
+
 <script src="script.js"></script>
 {% include TecSecSolutionFooter.html %}
