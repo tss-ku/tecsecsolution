@@ -1,3 +1,12 @@
+---
+layout: blogposts
+featured_paragraph: " The way businesses communicate in the UK is changing rapidly. With the nationwide copper network switch-off approaching, companies still relying on traditional phone systems are being urged to move to modern digital communication solutions like VoIP (Voice over Internet Protocol)"
+
+
+---
+
+
+
   <h1>VoIP vs Traditional Phone Systems: Why UK Businesses Must Prepare for the Copper Switch-Off</h1>
 
   <p>
@@ -228,6 +237,5 @@
       </a>
     </li>
   </ul>
-
-
+<script src="script.js"></script>
 
