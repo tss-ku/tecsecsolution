@@ -1,0 +1,545 @@
+---
+---
+
+
+
+{% include TecSecSolutionHeader.html %}
+
+
+
+
+<style>
+
+/* =========================
+   BASE
+========================= */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #111;
+    }
+
+a { text-decoration: none; }
+
+/* =========================
+   LAYOUT
+========================= */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.section {
+    padding: 30px 20px;
+}
+
+.section.alt {
+    background: #f5f7fb;
+}
+
+
+
+
+
+/* =========================
+   GRID
+========================= */
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+@media(min-width:768px){
+    .md-2 { grid-template-columns: repeat(2,1fr); }
+    .md-3 { grid-template-columns: repeat(3,1fr); }
+}
+
+/* =========================
+   CARDS
+========================= */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.29);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   TIMELINE
+========================= */
+.timeline {
+    border-left: 2px solid #e5e7eb;
+    padding-left: 20px;
+    margin-top: 40px;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: #2563eb;
+    border-radius: 50%;
+    position: absolute;
+    left: -28px;
+    top: 5px;
+}
+
+
+/* =========================
+   SCROLL REVEAL
+========================= */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+/* SECTION */
+
+.launch-section{
+    padding:80px 20px;
+    background:#fff;
+    text-align:center;
+    
+}
+
+.launch-section h2{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.launch-section p.subtitle{
+    font-size:16px;
+    color:#555;
+    max-width:800px;
+    margin:0 auto 70px;
+}
+
+/* STEPS */
+
+.steps{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    position:relative;
+}
+
+/* DOTTED CONNECTOR */
+
+.steps::before{
+    content:"";
+    position:absolute;
+    top:90px;
+    left:15%;
+    right:15%;
+    border-top:3px dotted #0ea5a8;
+    z-index:1;
+}
+
+.step{
+    width:250px;
+    position:relative;
+    z-index:2;
+}
+
+.step-number{
+    width:50px;
+    height:50px;
+    margin:0 auto -10px;
+
+    border-radius:50%;
+    background:#1d4ed8;
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-weight:bold;
+    font-size:22px;
+}
+
+/* CIRCLE */
+
+.circle{
+    width:125px;
+    height:125px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:70px;
+    color:white;
+
+    border:6px solid white;
+
+    box-shadow:
+        0 0 0 3px rgba(255,255,255,.8),
+        0 8px 30px rgba(0,0,0,.1);
+}
+
+.blue{
+    background:#1d4ed8;
+}
+
+.teal{
+    background:#0ea5a8;
+}
+
+.purple{
+    background:#7c3aed;
+}
+
+.green{
+    background:#84b300;
+}
+
+/* TEXT */
+
+.step h3{
+    margin-top:25px;
+    font-size:24px;
+    font-weight:700;
+}
+
+.step p{
+    color:#444;
+    line-height:1.7;
+    margin-top:10px;
+}
+
+/* SUPPORT BOX */
+
+.support-box{
+
+    margin:70px auto 0;
+    max-width:900px;
+
+    border:2px solid #7c3aed;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+}
+
+.support-icon{
+    font-size:80px;
+}
+
+.support-content h3{
+    color:#7c3aed;
+    margin-bottom:10px;
+}
+
+.support-content p{
+    color:#444;
+}
+
+@media(max-width:1000px){
+
+.steps{
+    flex-direction:column;
+    gap:50px;
+    align-items:center;
+}
+
+.steps::before{
+    display:none;
+}
+
+.support-box{
+    flex-direction:column;
+}
+
+}
+
+
+
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<!-- ================= HERO ================= -->
+
+
+<!-- HERO -->
+<section class="bg-image text-white py-20 text-center">
+
+        <div class="max-w-3xl mx-auto px-4">
+        <h1>One Partner for IT, Telecoms & Connectivity</h1>
+    <p>Built for UK businesses that want simplicity, accountability, and scale.</p>
+     <a href="#contact" class="mt-6 inline-block bg-white text-black -700 font-semibold px-6 py-3 rounded shadow hover:bg-gray-100">Get a Free Consultation</a>
+        
+    </div>
+</section>
+<!-- CONTENT -->
+<section class="section ">
+    <div class="container">
+ <div class="max-w-5xl mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold mb-4">Why Choose TecSecSolution?</h3>
+           <p> We saw a common problem in the business world. IT was with one company, broadband with another, and telephone systems with someone else.TecSecSolution brings fresh energy and expert knowledge to every job. We pride ourselves on delivering tailored solutions that fit your needs not a one-size-fits-all package. With TecSecSolution,No hidden catches. Just honest, reliable service you can trust, with full ownership and control in your hands.</p>
+        </div>
+        
+       <div class="grid md-2" style="margin-top:30px;">
+
+            <div class="card">
+                <h3>No More Blame Game</h3>
+                <p>Businesses are constantly stuck in the middle, trying to figure out who was responsible when something went wrong. This is where TecSecSolution steps in,to eliminate that frustration completely.
+
+Now you have one partner, one support team, and one point of contact for everything.</p>
+            </div>
+
+            <div class="card">
+                <h3>Built for Small & Medium sized Businesses</h3>
+                <p>Businesses shouldn’t have to chase multiple providers just to keep operations running.
+
+TecSecSolution brings everything together so you can focus on running your business, not managing suppliers.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    
+
+
+<!-- ================= Problem and SOLUTION ================= -->
+<section class="section alt reveal">
+
+
+<div class="container">
+
+        <h2>The Problems You faced before TecSecSolution</h2>
+
+        <div class="grid md-3" style="margin-top:30px;">
+
+            <div class="card">
+                <h3>Fragmented Services</h3>
+                <p>IT, broadband, and telecoms were all handled by different providers.</p>
+            </div>
+
+            <div class="card">
+                <h3>No Accountability</h3>
+                <p>When issues arose, businesses were left chasing multiple providers.</p>
+            </div>
+
+            <div class="card">
+                <h3>Lack of Unified Management</h3>
+                <p>No single provider manages the full environment end-to-end.</p>
+            </div>
+
+        </div>
+
+    </div>
+<li>    </li>
+    <div class="container">
+
+        <h2>Our Solution</h2>
+
+        <div class="grid md-3" style="margin-top:30px;">
+
+            <div class="card">
+                <h3>Single Provider</h3>
+                <p>One company handles everything.</p>
+            </div>
+
+            <div class="card">
+                <h3>Faster Support</h3>
+                <p>No blame shifting or delays.</p>
+            </div>
+
+            <div class="card">
+                <h3>Full Management</h3>
+                <p>We own the entire stack.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= STARTUP ================= -->
+
+<section class="launch-section">
+
+    <h2>Launch Your Startup</h2>
+
+    <p class="subtitle">
+        TecSecSolution gives you everything you need to launch and
+        grow your business fully connected from day one.
+    </p>
+
+    <div class="steps">
+
+        <div class="step">
+
+            <div class="step-number">01</div>
+
+            <div class="circle blue">
+                💻
+            </div>
+
+            <h3>Day 1 Setup</h3>
+
+            <p>
+                Domain, email and business setup
+                ready immediately.
+            </p>
+
+        </div>
+
+        <div class="step">
+
+            <div class="step-number" style="background:#0ea5a8;">
+                02
+            </div>
+
+            <div class="circle teal">
+                📶
+            </div>
+
+            <h3>Connectivity</h3>
+
+            <p>
+                Broadband and VoIP fully
+                configured.
+            </p>
+
+        </div>
+
+        <div class="step">
+
+            <div class="step-number" style="background:#7c3aed;">
+                03
+            </div>
+
+            <div class="circle purple">
+                🎧
+            </div>
+
+            <h3>Support</h3>
+
+            <p>
+                Ongoing IT and telecoms
+                management.
+            </p>
+
+        </div>
+
+        <div class="step">
+
+            <div class="step-number" style="background:#84b300;">
+                04
+            </div>
+
+            <div class="circle green">
+                📈
+            </div>
+
+            <h3>Growth Ready</h3>
+
+            <p>
+                Scalable infrastructure
+                as you expand.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="support-box">
+
+        <div class="support-icon">
+            🎁
+        </div>
+
+        <div class="support-content">
+
+            <h3>Startup Support</h3>
+
+            <p>
+                Businesses trading under 12 months receive discounted
+                onboarding packages to help reduce early-stage pressure.
+            </p>
+
+        </div>
+
+        <div class="support-icon">
+            %
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+<!-- ================= JS ================= -->
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("active");
+        }
+    });
+},{ threshold: 0.55 });
+
+reveals.forEach(el => observer.observe(el));
+</script>
+
+
+
+{% include TecSecSolutionFooter.html %}
+	<script src="script.js"></script>
+</body>
+
+</body>
+</html>
