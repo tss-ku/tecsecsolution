@@ -144,7 +144,7 @@ featured_paragraph: " The way businesses communicate in the UK is changing rapid
 
     <section class="blogpage-section">
 
-        <h2 class="blogpage-section-title">The Importance of Reliable Broadband</h2>
+        <h2 class="blogpage-section-title">The Importance of Reliable VoIP Phone system</h2>
 
         <div class="blogpage-stat-grid">
 
