@@ -33,7 +33,9 @@ title: Blog
                     <a class="read-more-btn" href="{{ post.url | relative_url }}">
                         Read More
                     </a>
-
+ <p class="blog-date">
+                {{ post.date | date: "%d %B %Y" }}
+            </p>
                 </div>
 
             </article>
