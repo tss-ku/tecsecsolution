@@ -19,7 +19,7 @@ featured_paragraph: " The way businesses communicate in the UK is changing rapid
         </h1>
 
         <p class="blogpage-hero-description">
-            Comparing BT and TecSecSolution to discover which platform delivers the UK's best business phone system for modern organisations.
+            Comparing Legacy LandLines and TecSecSolution to discover which platform delivers the UK's best business phone system for modern organisations.
         </p>
 
     </section>
@@ -31,7 +31,7 @@ featured_paragraph: " The way businesses communicate in the UK is changing rapid
         <div class="blogpage-content-card">
 
             <p>
-                For many years, BT has been a recognised name in UK telecommunications. However, modern businesses require far more than a traditional telephone service. Organisations looking for the <strong>UK's best business phone system</strong> need flexibility, mobility, advanced call management, and seamless support for hybrid working environments.
+                For many years, Legacy LandLines has been a recognised name in UK telecommunications. However, modern businesses require far more than a traditional telephone service. Organisations looking for the <strong>UK's best business phone system</strong> need flexibility, mobility, advanced call management, and seamless support for hybrid working environments.
             </p>
 
             <p>
@@ -95,14 +95,14 @@ featured_paragraph: " The way businesses communicate in the UK is changing rapid
     <section class="blogpage-section">
 
         <h2 class="blogpage-section-title">
-            BT vs TecSecSolution Feature Comparison
+            Legacy LandLines vs TecSecSolution Feature Comparison
         </h2>
 
         <div class="blogpage-comparison-grid">
 
             <div class="blogpage-comparison-card blogpage-traditional-system">
 
-                <h3>BT Traditional Phone Services</h3>
+                <h3>Legacy LandLines Phone Services</h3>
 
                 <ul class="blogpage-feature-list">
                     <li>Limited IVR functionality</li>
@@ -299,13 +299,13 @@ featured_paragraph: " The way businesses communicate in the UK is changing rapid
     <section class="blogpage-section">
 
         <h2 class="blogpage-section-title">
-            The Verdict: BT or TecSecSolution?
+            The Verdict: Legacy LandLines or TecSecSolution?
         </h2>
 
         <div class="blogpage-content-card">
 
             <p>
-                While BT remains a recognised telecommunications provider, many organisations now require far more than a traditional phone service. Businesses searching for the <strong>UK's best business phone system</strong> increasingly prioritise mobility, cloud flexibility, intelligent call management, and support for remote working.
+                While Legacy LandLines remains a recognised telecommunications provider, many organisations now require far more than a traditional phone service. Businesses searching for the <strong>UK's best business phone system</strong> increasingly prioritise mobility, cloud flexibility, intelligent call management, and support for remote working.
             </p>
 
             <p>
