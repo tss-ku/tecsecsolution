@@ -15,7 +15,7 @@ featured_paragraph: " The way businesses communicate in the UK is changing rapid
     <section class="blogpage-hero">
 
         <h1 class="blogpage-hero-title">
-            BT vs TecSecSolution: Which Phone System Is Better for Modern Businesses?
+            Legacy LandLines vs TecSecSolution: Which Phone System Is Better for Modern Businesses?
         </h1>
 
         <p class="blogpage-hero-description">
