@@ -1,0 +1,46 @@
+# TecSecSolution
+> TecSecSolution is a UK-based IT support, cybersecurity, and communications provider offering managed IT services, VoIP systems, business broadband, CCTV solutions, WiFi infrastructure, and cloud services. We help SMEs modernise their technology, improve security, and maintain reliable, scalable IT and communications systems.
+
+## Core Services
+- https://tecsecsolution.co.uk/: Main website and overview of IT, cybersecurity, and communications services
+- https://tecsecsolution.co.uk/services/: Managed IT support, cloud services, networking, and business IT solutions
+- https://tecsecsolution.co.uk/cybersecurity/: Cybersecurity protection including threat monitoring, risk management, and security hardening
+- https://tecsecsolution.co.uk/cloud/: Cloud infrastructure, Microsoft 365, Azure solutions, and virtualisation services
+- https://tecsecsolution.co.uk/contact/: Contact page for IT support, quotes, and service enquiries
+
+## Communications Services
+- VoIP systems for business telephony, call routing, and unified communications
+- Business broadband and connectivity solutions for reliable internet access
+- SIP trunking and hosted telephony integration
+- Call routing, IVR systems, and remote working communication tools
+
+## Security & Infrastructure Services
+- CCTV installation and maintenance for business premises security
+- Network CCTV integration with remote monitoring capabilities
+- Firewall configuration and perimeter security systems
+- Structured cabling and secure network design
+
+## Networking & WiFi Solutions
+- Business WiFi design, installation, and optimisation
+- Guest WiFi networks with VLAN separation
+- Site-wide wireless coverage for offices and warehouses
+- Secure remote access and VPN configuration
+
+## IT & Cloud Services
+- Managed IT support and helpdesk services
+- Microsoft 365 setup, migration, and administration
+- Cloud hosting and hybrid infrastructure solutions
+- Virtual Desktop Infrastructure (VDI) deployment and support
+
+## Who We Help
+- Small and medium-sized businesses (SMEs)
+- Offices, warehouses, and multi-site organisations
+- Companies requiring secure communications and networking
+- Businesses upgrading legacy IT or telecom systems
+
+## Location
+- Based in the United Kingdom
+- Serving businesses nationwide, with focus on West Midlands and surrounding regions
+
+## Contact
+- https://tecsecsolution.co.uk/#contact
