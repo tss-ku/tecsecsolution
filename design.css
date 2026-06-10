@@ -171,9 +171,9 @@ nav#nav-menu {
 /* links + buttons */
 nav#nav-menu a,
 nav#nav-menu button {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 550;
-    color: grey;
+    color: #0a192f;
     text-decoration: none;
     background: none;
     border: none;
@@ -225,7 +225,7 @@ nav#nav-menu button:hover {
     display: block;
     padding: 10px 14px;
     font-size: 14px;
-    color: #111;
+    color: #0a192f;
     text-decoration: none;
     transition: all 0.2s ease;
 }
@@ -269,7 +269,7 @@ nav#nav-menu button:hover {
     text-align: left;
     background: none;
     border: none;
-    color: #111;
+    color: #0a192f;
     transition: color 0.2s ease;
 }
 
