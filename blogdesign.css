@@ -81,7 +81,17 @@ body{
     text-align: center;
     font-size:2rem;
 }
+.section-title a,
+.section-title a:visited {
+    text-decoration: none;
+    color: Black;
+}
 
+.section-title a:hover,
+.section-title a:focus {
+    text-decoration: none;
+    color: blue;
+}
 /* Hover effect (important for UX + SEO engagement signals) */
 .section-title:hover {
     text-decoration: underline;
