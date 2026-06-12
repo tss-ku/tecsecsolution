@@ -1,6 +1,6 @@
 ---
 layout: blogposts
-featured_paragraph: " For many years, Legacy LandLines has been a recognised name in UK telecommunications. However, modern businesses require far more than a traditional telephone service. Organisations looking for the UK's best business phone system need flexibility, mobility, advanced call management, and seamless support for hybrid working environments."
+featured_paragraph: " For many years, Legacy LandLines have become a standard in UK telecommunications. However, modern businesses require far more than a traditional telephone service. Organisations looking for the UK's best business phone system need flexibility, mobility, advanced call management, and seamless support for hybrid working environments."
 
 
 ---
