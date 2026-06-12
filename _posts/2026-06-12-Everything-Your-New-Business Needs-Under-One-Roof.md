@@ -1,6 +1,6 @@
 ---
 layout: blogposts
-featured_paragraph: " tarting a new business is exciting, but building the right technology infrastructure can be challenging. From securing your domain name and creating a professional online presence to implementing communications, connectivity and cyber security, every decision impacts future growth."
+featured_paragraph: " Starting a new business is exciting, but building the right technology infrastructure can be challenging. From securing your domain name and creating a professional online presence to implementing communications, connectivity and cyber security, every decision impacts future growth."
 
 
 ---
