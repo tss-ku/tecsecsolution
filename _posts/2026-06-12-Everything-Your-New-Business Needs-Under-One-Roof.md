@@ -6,7 +6,7 @@ featured_paragraph: " tarting a new business is exciting, but building the right
 ---
 
 
-<body>
+
 
 
 <div class="blog-container">
@@ -362,5 +362,5 @@ featured_paragraph: " tarting a new business is exciting, but building the right
         </div>
     </section>
 
-    </body>
+    
 
