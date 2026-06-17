@@ -947,7 +947,28 @@ footer a:hover {
     margin-bottom:15px;
     color:#020617;
 }
+/* Remove default link styling inside benefits */
+.benefits a {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* makes the whole area clickable if <a> wraps card */
+}
 
+/* Ensure visited links don’t change colour */
+.benefits a:visited {
+    color: inherit;
+}
+
+/* Hover effect for the whole card link */
+.benefits a:hover .benefit-card {
+    transform: scale(1.03);
+    transition: transform 0.2s ease;
+}
+
+/* Optional: smooth transition for card */
+.benefit-card {
+    transition: transform 0.2s ease;
+}
 /* PROCESS */
 
 .process-grid{
