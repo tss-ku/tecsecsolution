@@ -1,46 +1,58 @@
 # TecSecSolution
-> TecSecSolution is a UK-based IT support, cybersecurity, and communications provider offering managed IT services, VoIP systems, business broadband, CCTV solutions, WiFi infrastructure, and cloud services. We help SMEs modernise their technology, improve security, and maintain reliable, scalable IT and communications systems.
 
-## Core Services
-- https://tecsecsolution.co.uk/: Main website and overview of IT, cybersecurity, and communications services
-- https://tecsecsolution.co.uk/services/: Managed IT support, cloud services, networking, and business IT solutions
-- https://tecsecsolution.co.uk/cybersecurity/: Cybersecurity protection including threat monitoring, risk management, and security hardening
-- https://tecsecsolution.co.uk/cloud/: Cloud infrastructure, Microsoft 365, Azure solutions, and virtualisation services
-- https://tecsecsolution.co.uk/contact/: Contact page for IT support, quotes, and service enquiries
+> TecSecSolution is a UK-based IT support, cybersecurity, and communications provider offering managed IT services, VoIP systems, business broadband, CCTV solutions, WiFi infrastructure, structured cabling, AV systems, and cloud services. We help SMEs modernise their technology, improve security, and maintain reliable, scalable IT and communications systems.
 
-## Communications Services
-- VoIP systems for business telephony, call routing, and unified communications
-- Business broadband and connectivity solutions for reliable internet access
-- SIP trunking and hosted telephony integration
-- Call routing, IVR systems, and remote working communication tools
+TecSecSolution delivers end-to-end IT and communications infrastructure for businesses, including networking, security, connectivity, and managed support services across the UK.
 
-## Security & Infrastructure Services
-- CCTV installation and maintenance for business premises security
-- Network CCTV integration with remote monitoring capabilities
-- Firewall configuration and perimeter security systems
-- Structured cabling and secure network design
+## Core Website
+- https://tecsecsolution.co.uk/
 
-## Networking & WiFi Solutions
-- Business WiFi design, installation, and optimisation
-- Guest WiFi networks with VLAN separation
-- Site-wide wireless coverage for offices and warehouses
-- Secure remote access and VPN configuration
+## Managed IT & Cloud Services
+- https://tecsecsolution.co.uk/managed-it
+- https://tecsecsolution.co.uk/VOIP
+- https://tecsecsolution.co.uk/CyberSecurity
 
-## IT & Cloud Services
-- Managed IT support and helpdesk services
-- Microsoft 365 setup, migration, and administration
-- Cloud hosting and hybrid infrastructure solutions
-- Virtual Desktop Infrastructure (VDI) deployment and support
+## Connectivity & Communications
+- https://tecsecsolution.co.uk/BroadBand
+https://tecsecsolution.co.uk/VOIP
+- VoIP systems, SIP trunking, hosted telephony
+- Business broadband and connectivity solutions
+- Call routing, IVR, and unified communications
 
-## Who We Help
-- Small and medium-sized businesses (SMEs)
-- Offices, warehouses, and multi-site organisations
-- Companies requiring secure communications and networking
-- Businesses upgrading legacy IT or telecom systems
+## Networking & Infrastructure
+https://tecsecsolution.co.uk/wifi-solutions
+https://tecsecsolution.co.uk/Engineer
+- Structured cabling and network installation
+- Wireless network design and deployment
+- Business WiFi and guest network solutions
+- VLAN segmentation and secure network design
 
-## Location
-- Based in the United Kingdom
-- Serving businesses nationwide, with focus on West Midlands and surrounding regions
+## Security & Surveillance
+https://tecsecsolution.co.uk/Engineer
+https://tecsecsolution.co.uk/CCTV
+https://tecsecsolution.co.uk/Alarm
+- CCTV installation and remote monitoring systems
+- Security infrastructure and firewall configuration
+- Network security design and perimeter protection
+
+## Business Services
+https://tecsecsolution.co.uk/Engineer
+- Business relocations and IT infrastructure moves
+- Office setup and network reconfiguration
+- On-site engineering and technical support
+
+## Data & Asset Services
+https://tecsecsolution.co.uk/Engineer
+- Data destruction services
+- Machine and hardware disposal and destruction
+- Secure decommissioning of IT equipment
+
+## Audio Visual (AV) Solutions
+- https://tecsecsolution.co.uk/AV
+https://tecsecsolution.co.uk/Engineer
+- Audio visual system design and installation
+- Meeting room and conference room AV setups
+- Integrated presentation and communication systems
 
 ## Contact
-- https://tecsecsolution.co.uk/#contact
+- https://tecsecsolution.co.uk/About
