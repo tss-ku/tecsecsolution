@@ -1,0 +1,217 @@
+:root{
+    --navy:#173a66;
+    --navy-dark:#102a4a;
+    --light-blue:#cfe1f4;
+    --pale-blue:#eef3fa;
+    --mid-blue:#9fb7d8;
+    --orange:#f0883e;
+    --text:#333a42;
+    --VOIPcard-border:#e3e8ef;
+  }
+
+
+
+.item{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:120px;
+    text-align:center;
+  }
+
+  .badge{
+    width:86px;
+    height:86px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    cursor:pointer;
+
+    background:#ffffff;
+    border:1px solid #e5e7eb;
+
+    box-shadow:
+      0 2px 8px rgba(0,0,0,0.06),
+      0 1px 2px rgba(0,0,0,0.04);
+
+    transition: all 0.2s ease;
+  }
+
+  .badge:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+    border-color:#cbd5e1;
+  }
+
+  .badge svg{
+    width:34px;
+    height:34px;
+    stroke: var(--c);
+    stroke-width:2;
+    fill:none;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
+
+  /* soft inner tint ring */
+  .badge::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:50%;
+    background: var(--c);
+    opacity:0.08;
+  }
+
+  h3{
+    margin:10px 0 4px;
+    font-size:16px;
+    font-weight:600;
+    color:#111827;
+  }
+
+  
+
+  /* TECHSEC COLOURS */
+  .phone { --c:#2563eb; }
+  .mic { --c:#ef4444; }
+  .uk { --c:#16a34a; }
+  .mobile { --c:#7c3aed; }
+  .desktop { --c:#1d4ed8; }
+  .voicemail { --c:#f59e0b; }
+  .cloud { --c:#0ea5e9; }
+
+  /* TECHSEC COLOURS (clean enterprise palette) */
+  .phone { --c:#2563eb; }      /* blue */
+  .mic { --c:#ef4444; }        /* red */
+  .uk { --c:#16a34a; }         /* green */
+  .mobile { --c:#7c3aed; }     /* purple */
+  .desktop { --c:#1d4ed8; }    /* deep blue */
+  .voicemail { --c:#f59e0b; }  /* amber */
+  .cloud { --c:#0ea5e9; }      /* sky */
+
+
+  
+  *{box-sizing:border-box;}
+ 
+  .VOIPwrapper{
+    max-width:1180px;
+    margin:0 auto;
+    
+    padding-right:18px;
+  }
+  .VOIPtop-row{
+    display:flex;
+    gap:1px;
+    margin-bottom:18px;
+  }
+  .VOIPcard{
+    flex:1;
+    background:#ffffff;
+    border:1px solid var(--VOIPcard-border);
+    border-radius:10px;
+    padding:22px 22px 18px;
+    box-shadow:0 3px 10px rgba(20,40,80,0.06);
+  }
+  VOIPh2{
+    font-size:17px;
+    letter-spacing:0.4px;
+    color:var(--navy);
+    margin:0 0 10px;
+    text-transform:uppercase;
+    font-weight:700;
+  }
+  .VOIPdesc{
+    font-size:13.5px;
+    line-height:1.45;
+    margin:0 0 16px;
+    color:var(--text);
+  }
+  ul.check{
+    list-style:none;
+    margin:0;
+    padding:0;
+    font-size:13px;
+    line-height:1.5;
+  }
+  ul.check li{
+    pVOIPosition:relative;
+    padding-left:22px;
+    margin-bottom:9px;
+    white-space:nowrap;
+  }
+  ul.check li::before{
+    content:"✓";
+    pVOIPosition:absolute;
+    left:0;
+    top:0;
+    color:var(--navy);
+    font-weight:700;
+  }
+  .VOIPcard-body{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+  }
+  .VOIPcard-icon{
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .VOIPdivider{
+    border:none;
+    border-top:1px solid var(--VOIPcard-border);
+    margin:26px 0;
+  }
+
+  .bottom-VOIPcard{
+    background:#ffffff;
+    border:1px solid var(--VOIPcard-border);
+    border-radius:10px;
+    padding:26px 30px;
+    display:flex;
+    align-items:center;
+    gap:30px;
+  }
+  .VOIPbottom-left{
+    flex:0 0 220px;
+  }
+  .VOIPbottom-left VOIPh2{margin-bottom:6px;}
+  .VOIPbottom-left .VOIPdesc{margin-bottom:18px;}
+  .VOIPos-icons{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+  }
+  .VOIPos{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:8px;
+    font-size:11.5px;
+    color:var(--text);
+    width:60px;
+    text-align:center;
+  }
+  .bottom-middle{
+    flex:1;
+    display:flex;
+    justify-content:center;
+  }
+  .bottom-right{
+    flex:0 0 220px;
+  }
+  .bottom-right ul.check li{white-space:normal;}
+
+  @media (max-width:900px){
+    .VOIPtop-row{flex-direction:column;}
+    .bottom-VOIPcard{flex-direction:column;align-items:flex-start;}
+    .VOIPbottom-left,.bottom-right{flex:1 1 auto;}
+    .bottom-middle{order:3;width:100%;}
+    .VOIPwrapper{border-right:none;padding-right:0;}
+  }
