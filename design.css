@@ -85,7 +85,12 @@ body {
 .text-3xl { font-size: 32px; font-weight: 700; }
 .text-xl { font-size: 20px; font-weight: 600; }
 .text-lg { font-size: 16px; }
-
+a.text-2xl {
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.
 .text-sm { font-size: 14px; }
 
 .font-bold { font-weight: 700; }
