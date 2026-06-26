@@ -1,7 +1,7 @@
 ---
 layout: blogposts
 featured_paragraph: " Protect your staff, premises and valuable business assets with professionally
-            installed CCTV and smart business alarm systems from TecSec Solution.
+            installed CCTV and smart business alarm systems from TecSecSolution.
             Monitor your business anytime, anywhere with intelligent AI-powered security."
 
 
@@ -18,7 +18,7 @@ featured_paragraph: " Protect your staff, premises and valuable business assets 
         <h1>CCTV for Small Businesses & Business Alarm Systems in the UK</h1>
         <p>
             Protect your staff, premises and valuable business assets with professionally
-            installed CCTV and smart business alarm systems from TecSec Solution.
+            installed CCTV and smart business alarm systems from TecSecSolution.
             Monitor your business anytime, anywhere with intelligent AI-powered security.
         </p>
     </section>
@@ -35,7 +35,7 @@ featured_paragraph: " Protect your staff, premises and valuable business assets 
             </p>
 
             <div class="highlight">
-                <strong>TecSec Solution</strong> provides professional CCTV and alarm system
+                <strong>TecSecSolution</strong> provides professional CCTV and alarm system
                 installation for businesses throughout the UK, delivering complete peace of
                 mind whether you're at work, home or travelling.
             </div>
@@ -326,11 +326,11 @@ featured_paragraph: " Protect your staff, premises and valuable business assets 
             Every business has different security requirements.
             Whether you need a single CCTV camera or a complete
             business security solution with AI detection and
-            integrated alarms, TecSec Solution can help.
+            integrated alarms, TecSecSolution can help.
         </p>
 
         <p>
-            Contact TecSec Solution today for professional CCTV
+            Contact TecSecSolution today for professional CCTV
             installation and business alarm systems designed to keep
             your business protected 24 hours a day.
         </p>
