@@ -1,92 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
- 
-<head>
+---
+---
+
+
+
+{% include TecSecSolutionHeader.html %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TecSecSolution | IT Services & Connectivity Experts</title>
- <link rel="icon" href="media/LOGO.webp" type="image/png" />
-    <link rel="stylesheet" href="design.css">
-</head>
-<!-- Loader -->
-<div id="loader">
-    <img src="media/LOGO.webp" alt="Logo" />
-    <div class="progress-container">
-        <div class="progress-bar" id="progress-bar">0%</div>
-    </div>
-</div>
-<header class="bg-white shadow">
-  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-    <!-- Logo -->
-    <a href="/index"<h1 class="text-2xl font-bold text-black -700 flex items-center gap-2">
-  <img src="media/LOGOsmall.webp" alt="TecSecSolution Logo" class="w-6 h-6" />
-  TecSecSolution
-</h1></a>
-
-    <!-- Hamburger Button (Mobile) -->
-    <button id="menu-toggle" class="md:hidden text-2xl text-gray-700 focus:outline-none">
-      ☰
-    </button>
-
-    <!-- Main Nav (Desktop) -->
-    <nav id="nav-menu" class="hidden md:flex space-x-6 items-center">
-      <a href="/index" class="text-gray-700 hover:text-blue-700 font-medium">Home</a>
-
-      <!-- Desktop Services Dropdown -->
-      <div class="relative group inline-block">
-  <button class="text-gray-700 hover:text-blue-700 font-medium focus:outline-none">
-    Services
-  </button>
-  <div class="submenu rounded shadow-md" id="desktop-services-submenu" tabindex="-1">
-    <a href="/managed-it" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Managed IT</a>
-	   <a href="/VOIP" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Business VoIP Systems</a>
-    <a href="/wifi-solutions" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">WIFI</a>	 
-    <a href="/Home-IT" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Home IT & Tech Setup</a>
-    <a href="/CCTV" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">CCTV</a>
-    <a href="/Alarm" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Alarm System</a>
-    <a href="/door" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Door Entry System</a>
-	<a href="/AV" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Audio Video Solutions</a>
-	  <a href="/Engineer" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Professional Engineers</a>
-	  <a href="/CyberSecurity" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Cyber Security</a>
-  </div>
-</div>
-
-      <a href="#about" class="text-gray-700 hover:text-blue-700 font-medium">About</a>
-      <a href="#contact" class="text-gray-700 hover:text-blue-700 font-medium">Contact</a>
-    </nav>
-  </div>
-
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
-    <a href="/index" class="block text-gray-700 hover:text-blue-700 font-medium">Home</a>
-
-    <!-- Mobile Services Toggle -->
-    <div>
-      <button id="mobile-services-toggle" class="w-full text-left text-gray-700 hover:text-blue-700 font-medium">
-        Services ▼
-      </button>
-      <div id="mobile-services-menu" class="hidden mt-2 pl-4 space-y-2">
-        <a href="/managed-it" class="block text-gray-700 hover:text-blue-700 text-sm">Managed IT & Telecomunications</a>
-		  <a href="/VOIP" class="block text-gray-700 hover:text-blue-700 text-sm">Business VoIP Systems</a>
-        <a href="/wifi-solutions" class="block text-gray-700 hover:text-blue-700 text-sm">WIFI</a>
-        <a href="/Home-IT " class="block text-gray-700 hover:text-blue-700 text-sm">Home IT & Tech Setup</a>
-        <a href="/CCTV " class="block text-gray-700 hover:text-blue-700 text-sm">CCTV</a>
-        <a href="/Alarm " class="block text-gray-700 hover:text-blue-700 text-sm">Alarm System</a>
-        <a href="/door" class="block text-gray-700 hover:text-blue-700 text-sm">Door Entry System</a>
-		 <a href="/AV" class="block text-gray-700 hover:text-blue-700 text-sm">Audio Video Solutions</a>
-		   <a href="/Engineer" class="block text-gray-700 hover:text-blue-700 text-sm">Professional Engineers</a>
-		   <a href="/CyberSecurity" class="block text-gray-700 hover:text-blue-700 text-sm">Cyber Security</a>
-      </div>
-    </div>
-
-
-    <a href="#about" class="block text-gray-700 hover:text-blue-700 font-medium">About</a>
-    <a href="#contact" class="block text-gray-700 hover:text-blue-700 font-medium">Contact</a>
-  </div>
-</header>
-
-
-
+ 
     
 
     <!-- Hero Section -->
@@ -109,241 +30,1343 @@ These Terms of Business ("Terms") govern all services provided by TecSecSolution
 to the Customer ("you", "your"). By engaging our services, you agree to be bound by these Terms.
 </p>
 
-<!-- 1 -->
-<h1 class="text-2xl font-bold">1. Definitions</h1>
-<p><strong>Services:</strong> IT support, cybersecurity, VoIP, connectivity, cloud services, hardware supply, and consultancy.</p>
-<p><strong>Equipment:</strong> Any hardware, software, or systems supplied, leased, or installed.</p>
-<p><strong>Order Form:</strong> Any signed or accepted agreement confirming Services.</p>
-<p><strong>Minimum Term:</strong> The agreed contract duration.</p>
-<p><strong>Fees:</strong> All charges payable by the Customer.</p>
 
-<!-- 2 -->
-<h1 class="text-2xl font-bold">2. Formation of Contract</h1>
-<ul>
-<li>A contract is formed upon acceptance, instruction, or commencement of Services.</li>
-<li>All contracts are legally binding once agreed.</li>
-<li>TecSecSolution reserves the right to accept or reject any order.</li>
-<li>Credit checks may be carried out at any time.</li>
-</ul>
 
-<!-- 3 -->
-<h1 class="text-2xl font-bold">3. Services</h1>
-<ul>
-<li>Services are provided with reasonable skill and care.</li>
-<li>No guarantee of uninterrupted, secure, or error-free service.</li>
-<li>Timelines are estimates only.</li>
-<li>Services may rely on third-party providers.</li>
-<li>Performance depends on external factors outside our control.</li>
-</ul>
+<body>
 
-<!-- 4 -->
-<h1 class="text-2xl font-bold">4. Customer Obligations</h1>
-<ul>
-<li>Provide full cooperation, access, and infrastructure.</li>
-<li>Ensure no unauthorised interference with systems.</li>
-<li>Responsible for employees, contractors, and third parties.</li>
-<li>Must not resell Services without written consent.</li>
-</ul>
 
-<!-- 5 -->
-<h1 class="text-2xl font-bold">5. Installation & Access</h1>
-<ul>
-<li>Provide safe access and working conditions.</li>
-<li>Ensure power, cabling, and network readiness.</li>
-<li>Missed appointments may incur charges.</li>
-</ul>
 
-<!-- 6 -->
-<h1 class="text-2xl font-bold">6. Equipment</h1>
-<ul>
+    <h1>TECSECSOLUTION LTD</h1>
 
-<li>Ownership remains with TecSecSolution until paid in full.</li>
-<li>Loaned equipment remains property of TecSecSolution</li>
-<li>Customer liable for damage, loss, or misuse.</li>
+    <div class="header-info">
+        <h2>TERMS &amp; CONDITIONS OF BUSINESS</h2>
 
-</ul>
-
-<!-- 7 -->
-<h1 class="text-2xl font-bold">7. Third-Party Services</h1>
-<ul>
-<li>Services may involve third-party providers.</li>
-<li>Separate agreements may apply.</li>
-<li>TecSec is not liable for third-party failures or outages.</li>
-</ul>
-
-<!-- 8 -->
-<h1 class="text-2xl font-bold">8. Fees & Payment</h1>
-<ul>
-<li>Fees are defined in the Order Form.</li>
-<li>Late payments incur interest and service suspension.</li>
-<li>Additional or out-of-scope work is chargeable.</li>
-</ul>
-
-<!-- 9 -->
-<h1 class="text-2xl font-bold">9. Additional Work</h1>
-<ul>
-<li>Includes customer-caused faults, changes, or emergency work.</li>
-<li>Charged at standard TecSecSolution rates.</li>
-</ul>
-
-<!-- 10 -->
-<h1 class="text-2xl font-bold">10. Term & Termination</h1>
-<ul>
-<li>Contracts run for a Minimum Term (typically 36–60 months).</li>
-<li>Auto-renew monthly after term.</li>
-<li>Early termination requires full remaining contract value.</li>
-<li>Cancellation before installation may still incur charges.</li>
-<li>TecSecsolution may terminate for breach or non-payment.</li>
-	<li>Once an order has been confirmed, it is considered binding. Any cancellation requested after confirmation may incur applicable charges.
-
-If hardware has already been ordered or procured by TecSecSolution at the time of cancellation, the customer will be liable for the full invoice amount. 
-	At this stage, the order is deemed to have reached a "point of no return," and full payment is required regardless of cancellation.</li>
-</ul>
-
-<!-- 11 -->
-<h1 class="text-2xl font-bold">11. Limitation of Liability</h1>
-<ul>
-<li>No liability for loss of profit, data, or business interruption.</li>
-<li>No liability for indirect or consequential losses.</li>
-<li>Hardware Warranty</li>
-<li>All hardware supplied by Tecsecsolution is provided with the manufacturer’s warranty only. 
-Tecsecsolution does not offer any independent or additional warranties for hardware products. 
-All warranty claims, coverage, and duration are subject to the terms and conditions set by the respective manufacturer and may vary depending on the product.</li>
-</ul>
-
-<!-- 12 -->
-<h1 class="text-2xl font-bold">12. Data & Cybersecurity</h1>
-<ul>
-<li>Customer responsible for backups and compliance.</li>
-<li>No system is completely secure.</li>
-<li>Cybersecurity services must be explicitly agreed.</li>
-</ul>
-
-<!-- 13 -->
-<h1 class="text-2xl font-bold">13. Service Levels</h1>
-<ul>
-<li>SLAs are targets only.</li>
-<li>Credits are discretionary.</li>
-</ul>
-
-<!-- 14 -->
-<h1 class="text-2xl font-bold">14. Force Majeure</h1>
-<p>TecSecSolution is not liable for events outside its control.</p>
-
-<!-- 15 -->
-<h1 class="text-2xl font-bold">15. Use of Services</h1>
-<ul>
-<li>Services must not be used unlawfully.</li>
-<li>No interference with systems or networks.</li>
-<li>Breach may result in suspension.</li>
-</ul>
-
-<!-- 16 -->
-<h1 class="text-2xl font-bold">16. Intellectual Property</h1>
-<p>All systems, designs, and materials remain TecSecSolution's property.</p>
-
-<!-- 17 -->
-<h1 class="text-2xl font-bold">17. Non-Solicitation</h1>
-<p>
-Customers may not employ TecSecSolution staff during the contract and for 12 months after termination. 
-Breach incurs a 12-month salary fee.
-</p>
-
-<!-- 18 -->
-<h1 class="text-2xl font-bold">18. Assignment</h1>
-<p>Customers may not transfer agreements. TecSecSolution may assign freely.</p>
-
-<!-- 19 -->
-<h1 class="text-2xl font-bold">19. Notices</h1>
-<p>All notices must be provided in writing.</p>
-
-<!-- 20 -->
-<h1 class="text-2xl font-bold">20. Variation</h1>
-<p>TecSecSolution may update these Terms at any time.</p>
-
-<!-- 21 -->
-<h1 class="text-2xl font-bold">21. Governing Law</h1>
-<p>These Terms are governed by the laws of England and Wales.</p>
-
-<!-- 22 -->
-<h1 class="text-2xl font-bold">22. Entire Agreement</h1>
-<p>This agreement overrides all prior discussions or representations.</p>
-
-<!-- 23 -->
-<h1 class="text-2xl font-bold">23. General Provisions</h1>
-<ul>
-<li>No waiver unless in writing.</li>
-<li>Invalid clauses do not affect remaining Terms.</li>
-<li>Pricing reflects risk allocation.</li>
-</ul>
-
-<!-- 24 -->
-<h1 class="text-2xl font-bold">24. Enforcement</h1>
-<p>
-The Customer agrees these Terms are fair, reasonable, and represent a genuine allocation of risk in a business-to-business context.
-</p>
-
-</section>
-</section>
-</div>
-
-</div>
-    <!-- About Section -->
-    <section id="about" class="py-16">
-        <div class="max-w-5xl mx-auto px-4 text-center">
-            <h3 class="text-3xl font-bold mb-4">Why Choose TecSecSolution?</h3>
-            <p class="text-lg">As a start-up with over a decade of combined industry experience, we bring fresh energy and expert knowledge to every job. We pride ourselves on delivering tailored solutions that fit your needs not a one-size-fits-all package. With TecSecSolution,No hidden catches. Just honest, reliable service you can trust, with full ownership and control in your hands.</p>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="bg-black -700 text-white py-16">
-        <div class="max-w-3xl mx-auto px-4 text-center">
-            <h3 class="text-3xl font-bold mb-4">Let’s Talk</h3>
-            <p class="mb-8">Ready to upgrade your connectivity and tech infrastructure? Contact the TSS team today and take the first step towards finding the best solution for you.</p>
-            <a class="js-hover-swap bg-white text-black px-6 py-3 rounded font-semibold hover:bg-gray-100"
-  href="mailto:Hello@TecSecSolution.co.uk"
-  data-default="Email Us"
-  data-hover="Hello@TecSecSolution.co.uk"
-  data-hover-color="blue"
-  data-default-color="black"
->Email Us</a>
-
-<a class="js-hover-swap bg-white text-black px-6 py-3 rounded font-semibold hover:bg-gray-100"
-  href="tel:07343045849"
-  data-default="Call Us"
-  data-hover="07343 045849"
-  data-hover-color="green"
-  data-default-color="black">Call Us</a>
-		</div>
-    </section>
-
-    <!-- Footer -->
-<footer class="bg-gray-800 text-gray-300 py-6">
-    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         
-        <!-- Left: Legal Links -->
-        <div class="mb-4 md:mb-0 text-sm">
-            <a href="/privacypolicy.html" class="hover:text-white mr-4">
-                Privacy Policy
-            </a>
-          <a href="/termsofbusiness.html" class="hover:text-white mr-4">
-                Terms & conditions
-            </a>
-        </div>
+        <p><strong>Company:</strong> TecSecSolution Ltd ("TecSecSolution", "TecSec", "we", "us", "our")</p>
+        <p><strong>Customer:</strong> The person, business, or organisation purchasing or receiving the Services ("Customer", "you", "your")</p>
+    
 
-        <!-- Centre: Copyright -->
-        <div class="text-sm text-center">
-	    <p>TecSecSolution LTD</p>
-            <p>Company Registration: 17151599</p>
-            <p>&copy; 2026 TecSecSolution. All rights reserved.</p>
 
-        </div>
+    <h2>1. Introduction and Scope</h2>
+
+    <p>
+        These Terms of Business ("Terms") govern all products and services provided by
+        TecSecSolution Ltd to the Customer.
+    </p>
+
+    <p>The Services covered by these Terms may include, without limitation:</p>
+
+    <ul>
+        <li>IT support and managed IT services;</li>
+        <li>Cybersecurity services;</li>
+        <li>Broadband and internet connectivity;</li>
+        <li>Leased lines and dedicated internet access;</li>
+        <li>Cloud phone systems and VoIP;</li>
+        <li>Telephone numbers and number porting;</li>
+        <li>Cloud services and hosted services;</li>
+        <li>Hardware supply, installation, configuration, leasing, or finance;</li>
+        <li>Software and software licensing;</li>
+        <li>Network infrastructure and cabling;</li>
+        <li>Consultancy and professional services;</li>
+        <li>Technical support and maintenance; and</li>
+        <li>Any other services agreed between TecSecSolution and the Customer.</li>
+    </ul>
+
+    <p>
+        These Terms should be read together with any quotation, proposal, Order Form,
+        service specification, Statement of Work, Service Level Agreement ("SLA"), or
+        other written agreement issued or accepted by TecSecSolution (together, the "Order").
+    </p>
+
+    <p>
+        Where there is a conflict between these Terms and an Order, the specific terms
+        of the Order shall take precedence to the extent of the conflict.
+    </p>
+
+    <p>
+        By accepting a quotation, signing or accepting an Order Form, placing an order,
+        providing written or verbal instruction to proceed, making payment, or allowing
+        TecSecSolution to commence work, the Customer agrees to be bound by these Terms.
+    </p>
+
+
+    <h2>2. Definitions</h2>
+
+    <p><strong>"Services"</strong> means any services supplied by TecSecSolution, including IT support, cybersecurity, VoIP, broadband, connectivity, leased lines, cloud services, hardware-related services, consultancy, installation, maintenance, and support.</p>
+
+    <p><strong>"Equipment"</strong> means any hardware, software, telecommunications equipment, networking equipment, devices, systems, licences, or other items supplied, leased, installed, configured, or made available by TecSecSolution.</p>
+
+    <p><strong>"Order" or "Order Form"</strong> means any quotation, proposal, order form, statement of work, service specification, agreement, or other document confirming the Services to be supplied.</p>
+
+    <p><strong>"Minimum Term"</strong> means the minimum contractual period for which the Customer has agreed to purchase the relevant Services.</p>
+
+    <p><strong>"Fees"</strong> means all charges payable by the Customer, including recurring charges, installation fees, equipment costs, professional service charges, support charges, third-party charges, cancellation fees, and other applicable costs.</p>
+
+    <p><strong>"Third-Party Provider"</strong> means any telecommunications provider, network operator, carrier, cloud provider, software provider, manufacturer, distributor, finance company, leasing company, courier, or other third party involved in delivering or supporting the Services.</p>
+
+    <p><strong>"Service Activation Date"</strong> means the date on which a Service is activated, installed, made available for use, or otherwise deemed operational in accordance with the relevant Order.</p>
+
+
+    <h2>3. Formation of Contract</h2>
+
+    <p>A legally binding contract is formed when any of the following occurs:</p>
+
+    <ul>
+        <li>The Customer signs or accepts an Order Form;</li>
+        <li>The Customer accepts a quotation or proposal;</li>
+        <li>The Customer provides written or verbal instruction to proceed;</li>
+        <li>The Customer makes payment for the Services;</li>
+        <li>TecSecSolution begins providing the Services; or</li>
+        <li>TecSecSolution otherwise confirms acceptance of the Customer's order.</li>
+    </ul>
+
+    <p>
+        Once an order has been accepted or confirmed, it is legally binding and may not
+        be cancelled without TecSecSolution's written agreement.
+    </p>
+
+    <p>
+        TecSecSolution reserves the right to accept or reject any order at its discretion
+        and may decline to provide Services where technical, commercial, credit, regulatory,
+        or operational considerations make it unreasonable to do so.
+    </p>
+
+    <p>
+        TecSecSolution may carry out credit checks before accepting an order and may carry
+        out further credit checks during the contractual relationship where reasonably required.
+    </p>
+
+    <p>
+        TecSecSolution may require a deposit, advance payment, credit limit, direct debit
+        mandate, or other payment security before commencing or continuing Services.
+    </p>
+
+
+    <h2>4. Quotations and Pricing</h2>
+
+    <p>
+        Unless expressly stated otherwise, quotations are valid for the period stated in the quotation.
+    </p>
+
+    <p>
+        If no validity period is stated, quotations may be withdrawn or revised at any time before acceptance.
+    </p>
+
+    <p>All quotations are subject to:</p>
+
+    <ul>
+        <li>Technical feasibility;</li>
+        <li>Availability of Services;</li>
+        <li>Availability of Equipment;</li>
+        <li>Third-party pricing;</li>
+        <li>Network availability;</li>
+        <li>Site surveys;</li>
+        <li>Technical surveys;</li>
+        <li>Supplier confirmation; and</li>
+        <li>Accurate information being provided by the Customer.</li>
+    </ul>
+
+    <p>
+        TecSecSolution reserves the right to amend a quotation where additional requirements,
+        technical limitations, third-party costs, infrastructure requirements, or changes in
+        Customer requirements are identified.
+    </p>
+
+    <p>
+        Unless expressly stated otherwise, quotations exclude any additional work or costs not
+        specifically identified in the quotation.
+    </p>
+
+
+    <h2>5. Provision of Services</h2>
+
+    <p>
+        TecSecSolution shall provide the Services with reasonable skill and care.
+    </p>
+
+    <p>TecSecSolution does not guarantee that the Services will be:</p>
+
+    <ul>
+        <li>Uninterrupted;</li>
+        <li>Completely secure;</li>
+        <li>Error-free;</li>
+        <li>Available at all times; or</li>
+        <li>Free from faults or vulnerabilities.</li>
+    </ul>
+
+    <p>
+        The Services may depend upon third-party networks, infrastructure, cloud platforms,
+        telecommunications providers, software providers, manufacturers, or other external services.
+    </p>
+
+    <p>
+        Service performance may therefore be affected by circumstances outside TecSecSolution's
+        reasonable control.
+    </p>
+
+    <p>
+        All installation, delivery, repair, support, and implementation timescales are estimates
+        unless expressly confirmed in writing as guaranteed contractual deadlines.
+    </p>
+
+
+    <h2>6. Broadband Installation and Lead Times</h2>
+
+    <p>
+        Standard broadband services are <strong>normally installed within approximately 30 days</strong>
+        from order acceptance.
+    </p>
+
+    <p>
+        The 30-day period is an <strong>estimated timescale only and is not a guaranteed installation deadline</strong>.
+    </p>
+
+    <p>Actual installation dates may vary depending upon:</p>
+
+    <ul>
+        <li>Network availability;</li>
+        <li>Existing infrastructure;</li>
+        <li>Engineer availability;</li>
+        <li>Third-party network providers;</li>
+        <li>Line availability;</li>
+        <li>Site conditions;</li>
+        <li>Technical surveys;</li>
+        <li>Additional infrastructure requirements;</li>
+        <li>External works;</li>
+        <li>Customer readiness;</li>
+        <li>Access to the premises;</li>
+        <li>Landlord permissions;</li>
+        <li>Wayleaves;</li>
+        <li>Planning requirements;</li>
+        <li>Local authority approvals;</li>
+        <li>Equipment availability; and</li>
+        <li>Other factors outside TecSecSolution's reasonable control.</li>
+    </ul>
+
+    <p>
+        TecSecSolution will use reasonable efforts to progress the installation and keep the
+        Customer informed of material delays.
+    </p>
+
+    <p>
+        Delays to broadband installation shall not automatically constitute a breach of contract
+        or entitle the Customer to compensation or cancellation.
+    </p>
+ <h3>Important</h3>
+
+        <p>
+            <strong>
+                These timescales are estimates only and are not guaranteed installation deadlines.
+                Actual installation dates may be affected by technical surveys, network availability,
+                third-party suppliers, civil engineering works, fibre construction, wayleaves, landlord
+                permissions, planning requirements, local authority approvals, site access, weather,
+                equipment availability, supply chain issues, and other factors outside TecSecSolution's
+                reasonable control.
+            </strong>
+        </p>
+
+        <p>
+            <strong>
+                TecSecSolution will use reasonable efforts to progress installations as quickly as reasonably
+                practicable and to keep Customers informed of material delays.
+            </strong>
+        </p>
+
+        <p>
+            <strong>
+                A delay in installation caused by circumstances outside TecSecSolution's reasonable control
+                shall not, by itself, entitle the Customer to cancel the Order, withhold payment, or claim
+                compensation, unless expressly provided otherwise by applicable law or the relevant Order.
+            </strong>
+        </p>
+
+
+    <h2>7. Leased Line/Ethernet Installation and Lead Times</h2>
+
+    <p>
+        Leased line and dedicated internet access services generally require a longer installation process.
+    </p>
+
+    <p>
+        The expected installation timescale is <strong>normally approximately 90 days</strong>
+        from order acceptance, subject to technical surveys, network availability, infrastructure
+        requirements, and third-party provider timescales.
+    </p>
+
+    <p>
+        The 90-day period is an <strong>estimate only and is not a guaranteed installation deadline</strong>.
+    </p>
+
+    <p>Leased line installations may involve:</p>
+
+    <ul>
+        <li>Network surveys;</li>
+        <li>Fibre construction;</li>
+        <li>Duct installation;</li>
+        <li>Civil engineering works;</li>
+        <li>Road or pavement works;</li>
+        <li>Traffic management;</li>
+        <li>Planning permissions;</li>
+        <li>Wayleaves;</li>
+        <li>Landlord permissions;</li>
+        <li>Access to third-party land;</li>
+        <li>Building management approval;</li>
+        <li>Internal cabling;</li>
+        <li>Equipment installation;</li>
+        <li>Configuration;</li>
+        <li>Testing; and</li>
+        <li>Service activation.</li>
+    </ul>
+
+    <p>
+        Any of these factors may cause installation to take longer than the estimated 90-day period.
+    </p>
+
+    <p>
+        TecSecSolution shall not be responsible for delays caused by third-party network operators,
+        infrastructure providers, local authorities, landlords, building owners, utility companies,
+        or other third parties.
+    </p>
+<p>
+        “Light Line” is a connectivity product offered by TecSecSolution. The service provides a symmetrical bandwidth connection, with 20% of the contracted bandwidth provided as guaranteed capacity. The remaining 80% of the bandwidth is available on a burstable basis, subject to network availability and capacity at the time of use.
+
+ <h3>Important</h3>
+
+        <p>
+            <strong>
+                These timescales are estimates only and are not guaranteed installation deadlines.
+                Actual installation dates may be affected by technical surveys, network availability,
+                third-party suppliers, civil engineering works, fibre construction, wayleaves, landlord
+                permissions, planning requirements, local authority approvals, site access, weather,
+                equipment availability, supply chain issues, and other factors outside TecSecSolution's
+                reasonable control.
+            </strong>
+        </p>
+
+        <p>
+            <strong>
+                TecSecSolution will use reasonable efforts to progress installations as quickly as reasonably
+                practicable and to keep Customers informed of material delays.
+            </strong>
+        </p>
+
+        <p>
+            <strong>
+                A delay in installation caused by circumstances outside TecSecSolution's reasonable control
+                shall not, by itself, entitle the Customer to cancel the Order, withhold payment, or claim
+                compensation, unless expressly provided otherwise by applicable law or the relevant Order.
+            </strong>
+        </p>
+    <h2>8. External Factors and Third-Party Dependencies</h2>
+
+    <p>
+        The Customer acknowledges that many Services rely on third-party infrastructure and services.
+    </p>
+
+    <p>
+        TecSecSolution does not control the availability, performance, installation schedules, pricing,
+        or actions of Third-Party Providers.
+    </p>
+
+    <p>
+        TecSecSolution shall not be liable for delays, interruptions, failures, or additional costs
+        caused by circumstances outside its reasonable control, including:
+    </p>
+
+    <ul>
+        <li>Third-party network delays;</li>
+        <li>Fibre construction delays;</li>
+        <li>Network outages;</li>
+        <li>Engineering resource availability;</li>
+        <li>Planning or regulatory approvals;</li>
+        <li>Wayleave or landlord delays;</li>
+        <li>Local authority requirements;</li>
+        <li>Road closures or access restrictions;</li>
+        <li>Utility works;</li>
+        <li>Severe weather;</li>
+        <li>Flooding or fire;</li>
+        <li>Power failures;</li>
+        <li>Cyber attacks;</li>
+        <li>Equipment shortages;</li>
+        <li>Supply chain disruption;</li>
+        <li>Industrial disputes;</li>
+        <li>Government or regulatory action;</li>
+        <li>War or terrorism;</li>
+        <li>Civil unrest;</li>
+        <li>National emergencies; or</li>
+        <li>Other events beyond TecSecSolution's reasonable control.</li>
+    </ul>
+
+    <p>
+        Such circumstances shall not automatically entitle the Customer to cancel an order or claim compensation.
+    </p>
+
+
+    <h2>9. Customer Obligations</h2>
+
+    <p>The Customer shall:</p>
+
+    <ul>
+        <li>Provide complete and accurate information;</li>
+        <li>Provide reasonable cooperation;</li>
+        <li>Provide timely access to premises;</li>
+        <li>Obtain all required permissions and consents;</li>
+        <li>Provide suitable working conditions;</li>
+        <li>Provide suitable power and electrical facilities;</li>
+        <li>Ensure required cabling and infrastructure are available;</li>
+        <li>Ensure premises are ready for installation;</li>
+        <li>Provide access to relevant systems where required;</li>
+        <li>Provide accurate telephone number and porting information;</li>
+        <li>Cooperate with fault diagnosis and resolution;</li>
+        <li>Ensure employees and contractors comply with these Terms;</li>
+        <li>Maintain appropriate backups where applicable;</li>
+        <li>Maintain appropriate security controls; and</li>
+        <li>Pay all Fees when due.</li>
+    </ul>
+
+    <p>
+        The Customer is responsible for the actions and omissions of its employees, contractors,
+        agents, visitors, and other persons accessing or using the Services.
+    </p>
+
+    <p>
+        The Customer must not resell, sublicense, redistribute, or commercially exploit the Services
+        without TecSecSolution's prior written consent.
+    </p>
+
+
+    <h2>10. Installation, Site Access and Appointments</h2>
+
+    <p>
+        The Customer shall provide safe and reasonable access to its premises for TecSecSolution,
+        its employees, engineers, contractors, and Third-Party Providers.
+    </p>
+
+    <p>The Customer must ensure that:</p>
+
+    <ul>
+        <li>The premises are safe and accessible;</li>
+        <li>Appropriate power is available;</li>
+        <li>Required cabling is installed;</li>
+        <li>Equipment locations are accessible;</li>
+        <li>Necessary permissions have been obtained; and</li>
+        <li>An authorised representative is available where required.</li>
+    </ul>
+
+    <p>
+        If an installation or engineering visit cannot proceed because of circumstances attributable
+        to the Customer, TecSecSolution or its Third-Party Provider may charge for:
+    </p>
+
+    <ul>
+        <li>Abortive visits;</li>
+        <li>Engineer attendance;</li>
+        <li>Rescheduling;</li>
+        <li>Travel;</li>
+        <li>Additional labour;</li>
+        <li>Storage;</li>
+        <li>Additional installation work; or</li>
+        <li>Other reasonable costs incurred.</li>
+    </ul>
+
+
+    <h2>11. Cloud Phone and VoIP Services</h2>
+
+    <p>
+        Cloud phone and VoIP services depend on internet connectivity, network performance,
+        power, compatible equipment, configuration, and third-party cloud infrastructure.
+    </p>
+
+    <p>
+        TecSecSolution will use reasonable efforts to provide the Services in accordance with
+        the agreed service specification.
+    </p>
+
+    <p>
+        However, TecSecSolution does not guarantee uninterrupted service where availability is
+        affected by:
+    </p>
+
+    <ul>
+        <li>Broadband failure;</li>
+        <li>Leased line failure;</li>
+        <li>Internet outages;</li>
+        <li>Local network problems;</li>
+        <li>Wi-Fi coverage;</li>
+        <li>Customer equipment;</li>
+        <li>Power failure;</li>
+        <li>Incorrect configuration;</li>
+        <li>Third-party cloud outages;</li>
+        <li>Internet congestion;</li>
+        <li>Cyber attacks;</li>
+        <li>Network maintenance; or</li>
+        <li>Other circumstances outside TecSecSolution's reasonable control.</li>
+    </ul>
+
+    <p>
+        Where the Customer purchases connectivity from another provider, TecSecSolution may be
+        unable to provide end-to-end fault resolution.
+    </p>
+
+
+    <h2>12. Emergency Calling</h2>
+
+    <p>
+        The Customer acknowledges that emergency calling through VoIP or cloud phone systems may
+        be affected by loss of power, internet connectivity, network failure, equipment failure,
+        or other technical issues.
+    </p>
+
+    <p>
+        The Customer should not rely solely on a VoIP or cloud phone system as its means of
+        contacting emergency services.
+    </p>
+
+    <p>
+        The Customer is responsible for ensuring that users understand any limitations relating
+        to emergency calling.
+    </p>
+
+
+    <h2>13. Telephone Numbers and Number Porting</h2>
+
+    <p>
+        Telephone numbers are subject to availability, regulatory requirements, and Third-Party
+        Provider restrictions.
+    </p>
+
+    <p>
+        TecSecSolution will use reasonable efforts to complete number porting where requested.
+    </p>
+
+    <p>Porting may be delayed or rejected because of:</p>
+
+    <ul>
+        <li>Incorrect information;</li>
+        <li>Account mismatches;</li>
+        <li>Contractual restrictions;</li>
+        <li>Technical limitations;</li>
+        <li>Existing provider issues; or</li>
+        <li>Third-party processes.</li>
+    </ul>
+
+    <p>
+        TecSecSolution cannot guarantee that a particular number will be available or successfully ported.
+    </p>
+
+    <p>
+        The Customer remains responsible for managing its existing telecommunications contracts
+        and must not cancel an existing service prematurely where this could affect number porting
+        or service continuity.
+    </p>
+
+
+    <h2>14. Equipment</h2>
+
+    <p>
+        Unless otherwise stated in writing, ownership of Equipment supplied by TecSecSolution remains
+        with TecSecSolution until all amounts due for that Equipment have been paid in full.
+    </p>
+
+    <p>
+        Where Equipment is supplied under a lease, rental, finance agreement, or third-party arrangement,
+        ownership shall remain with the relevant owner or finance provider in accordance with the applicable agreement.
+    </p>
+
+    <p>
+        Loaned or leased Equipment remains the property of TecSecSolution or the relevant Third-Party Provider.
+    </p>
+
+    <p>The Customer shall:</p>
+
+    <ul>
+        <li>Take reasonable care of Equipment;</li>
+        <li>Not sell or transfer Equipment;</li>
+        <li>Not dispose of Equipment;</li>
+        <li>Not modify Equipment without permission;</li>
+        <li>Prevent unauthorised use; and</li>
+        <li>Return Equipment when required.</li>
+    </ul>
+
+    <p>
+        The Customer may be liable for repair or replacement costs where Equipment is lost, stolen,
+        damaged, misused, or damaged through negligence.
+    </p>
+
+
+    <h2>15. Hardware Warranty</h2>
+
+    <p>
+        All hardware supplied by TecSecSolution is provided with the
+        <strong>manufacturer's warranty only</strong>
+    </p>
+
+    <p>
+        TecSecSolution does not provide any independent or additional warranty for hardware products.
+    </p>
+
+    <p>
+        All hardware warranty claims, coverage, exclusions, duration, repair, replacement, and eligibility
+        are subject to the terms and conditions imposed by the relevant manufacturer.
+    </p>
+
+    <p>
+        Warranty terms may vary between products and manufacturers.
+    </p>
+
+    <p>
+        Where appropriate, TecSecSolution may assist the Customer in liaising with the manufacturer
+        or distributor but does not guarantee the outcome of any warranty claim.
+    </p>
+
+    <p>
+        The Customer remains responsible for payment of any charges not covered by the manufacturer's warranty.
+    </p>
+
+
+    <h2>16. Equipment Delivery</h2>
+
+    <p>
+        Any delivery date provided for Equipment is an estimate only.
+    </p>
+
+    <p>
+        TecSecSolution shall not be liable for delivery delays caused by manufacturers, distributors,
+        couriers, stock shortages, supply chain disruption, or other third parties.
+    </p>
+
+    <p>
+        Where Equipment is required before installation, delivery delays may affect the overall project
+        or installation timetable.
+    </p>
+
+
+    <h2>17. Customer Premises and Internal Infrastructure</h2>
+
+    <p>
+        Unless expressly included in the Order, the Customer is responsible for:
+    </p>
+
+    <ul>
+        <li>Internal network cabling;</li>
+        <li>Structured cabling;</li>
+        <li>Switches;</li>
+        <li>Wi-Fi infrastructure;</li>
+        <li>Power;</li>
+        <li>Internal network equipment;</li>
+        <li>Customer-owned routers;</li>
+        <li>Customer-owned devices; and</li>
+        <li>Other infrastructure required to use the Services.</li>
+    </ul>
+
+    <p>
+        Where TecSecSolution provides additional cabling or infrastructure work, this may be charged separately.
+    </p>
+
+    <p>
+        TecSecSolution shall not be responsible for performance issues caused by Customer-owned infrastructure.
+    </p>
+
+
+    <h2>18. Service Activation</h2>
+
+    <p>
+        A Service shall be considered activated when it has been installed, configured, tested,
+        made available for use, or otherwise declared operational by TecSecSolution or the relevant
+        Third-Party Provider.
+    </p>
+
+    <p>
+        The Customer must promptly report any material issue following activation.
+    </p>
+
+    <p>
+        Minor configuration adjustments, user training, reasonable support, or post-installation
+        changes shall not normally constitute grounds for refusing activation or withholding payment.
+    </p>
+
+
+    <h2>19. Fault Reporting and Support</h2>
+
+    <p>
+        Faults must be reported using the support channels designated by TecSecSolution.
+    </p>
+
+    <p>
+        The Customer must provide reasonable information required to investigate and resolve faults.
+    </p>
+
+    <p>
+        TecSecSolution may charge for work where a fault is found to be caused by Customer equipment,
+        Customer configuration, Customer misuse, accidental damage, unauthorised changes, third-party
+        systems, internal infrastructure, or circumstances outside the TecSecSolution-managed Service.
+    </p>
+
+
+    <h2>20. Planned Maintenance</h2>
+
+    <p>
+        TecSecSolution and/or its Third-Party Providers may carry out maintenance, upgrades, repairs,
+        or network works.
+    </p>
+
+    <p>
+        Where reasonably practicable, TecSecSolution will provide advance notice of planned maintenance
+        expected to materially affect the Services.
+    </p>
+
+    <p>
+        Emergency maintenance may be undertaken without prior notice where necessary to protect systems,
+        networks, security, or service integrity.
+    </p>
+
+
+    <h2>21. Fees and Payment</h2>
+
+    <p>
+        Fees shall be as stated in the relevant Order, quotation, invoice, or agreed payment schedule.
+    </p>
+
+    <p>Unless otherwise agreed:</p>
+
+    <ul>
+        <li>Installation charges are payable as specified in the Order;</li>
+        <li>Recurring charges commence on the Service Activation Date or the date stated in the Order;</li>
+        <li>Leased line charges may commence when the Service is made available for use;</li>
+        <li>Hardware charges are payable in accordance with the agreed terms; and</li>
+        <li>Additional or out-of-scope work is chargeable separately.</li>
+    </ul>
+
+    <p>
+        Invoices must be paid by the due date.
+    </p>
+
+    <p>Late payments may result in:</p>
+
+    <ul>
+        <li>Interest being charged;</li>
+        <li>Recovery costs;</li>
+        <li>Suspension of Services;</li>
+        <li>Restriction of support; and/or</li>
+        <li>Termination of Services.</li>
+    </ul>
+
+    <p>
+        TecSecSolution reserves the right to suspend Services where undisputed invoices remain unpaid
+        following reasonable notice.
+    </p>
+
+    <p>
+        Suspension does not remove the Customer's obligation to pay outstanding or continuing contractual charges.
+    </p>
+
+
+    <h2>22. Additional and Out-of-Scope Work</h2>
+
+    <p>
+        Work outside the agreed scope may be charged separately.
+    </p>
+
+    <p>Additional work may include:</p>
+
+    <ul>
+        <li>Customer-requested changes;</li>
+        <li>Changes to configuration;</li>
+        <li>Additional users;</li>
+        <li>Additional equipment;</li>
+        <li>Customer-caused faults;</li>
+        <li>Emergency work;</li>
+        <li>Remedial work;</li>
+        <li>Site visits;</li>
+        <li>Engineer attendance;</li>
+        <li>Additional cabling;</li>
+        <li>Third-party charges;</li>
+        <li>Reconfiguration;</li>
+        <li>Data recovery;</li>
+        <li>Migration work; or</li>
+        <li>Other work not expressly included in the Order.</li>
+    </ul>
+
+    <p>
+        Additional work shall normally be charged at TecSecSolution's standard rates unless otherwise agreed in writing.
+    </p>
+
+
+    <h2>23. Minimum Contract Term</h2>
+
+    <p>
+        Where applicable, Services shall be subject to the Minimum Term stated in the Order.
+    </p>
+
+    <p>
+        Minimum Terms may typically range between <strong>36 and 60 months</strong>, depending on the Services,
+        Equipment, finance arrangements, connectivity, or third-party contracts involved.
+    </p>
+
+    <p>
+        The Customer remains liable for all contractual charges throughout the Minimum Term, even if the
+        Customer no longer requires or uses the Services, except where termination is expressly permitted
+        under the applicable agreement or by law.
+    </p>
+
+    <p>
+        Following expiry of the Minimum Term, the Services may automatically continue on a rolling monthly
+        basis unless otherwise stated in the Order.
+    </p>
+
+    <p>
+        The Customer must provide any required notice to terminate the Services in accordance with the Order
+        and these Terms.
+    </p>
+
+
+    <h2>24. Order Confirmation, Cancellation and "Point of No Return"</h2>
+
+    <p>
+        Once an Order has been confirmed by TecSecSolution, it is considered binding.
+    </p>
+
+    <p>
+        Any cancellation requested after Order confirmation may incur applicable charges.
+    </p>
+
+    <p>
+        Where TecSecSolution has placed an order with a Third-Party Provider, manufacturer, distributor,
+        network operator, or finance provider, the Customer may be liable for all non-refundable costs incurred.
+    </p>
+
+    <p>
+        If hardware or Equipment has been ordered, procured, manufactured, configured, customised, allocated,
+        or otherwise committed by TecSecSolution for the Customer at the time cancellation is requested,
+        the Customer shall be liable for the full cost of that Equipment and any associated non-refundable charges.
+    </p>
+
+    <p>
+        At this stage, the Order may be considered to have reached a <strong>"Point of No Return"</strong>,
+        meaning that TecSecSolution has made an irrevocable or substantially irreversible financial commitment
+        in reliance on the Customer's Order.
+    </p>
+
+    <p>
+        Where an Order has reached the Point of No Return, cancellation shall not relieve the Customer of
+        liability for:
+    </p>
+
+    <ul>
+        <li>Equipment costs;</li>
+        <li>Supplier costs;</li>
+        <li>Third-party cancellation charges;</li>
+        <li>Installation costs;</li>
+        <li>Engineering costs;</li>
+        <li>Survey costs;</li>
+        <li>Construction costs;</li>
+        <li>Number porting costs;</li>
+        <li>Finance or leasing commitments; or</li>
+        <li>Other reasonable non-refundable costs incurred.</li>
+    </ul>
+
+    <p>
+        The Customer remains liable for such costs regardless of whether the Customer subsequently decides
+        not to proceed with the Services.
+    </p>
+
+
+    <h2>25. Termination</h2>
+
+    <p>TecSecSolution may terminate or suspend Services where:</p>
+
+    <ul>
+        <li>The Customer materially breaches these Terms;</li>
+        <li>The Customer fails to pay undisputed Fees;</li>
+        <li>The Customer becomes insolvent;</li>
+        <li>The Customer enters liquidation or administration;</li>
+        <li>The Customer ceases trading;</li>
+        <li>Continued provision of Services creates a security or legal risk; or</li>
+        <li>The Customer uses the Services unlawfully or in breach of acceptable use requirements.</li>
+    </ul>
+
+    <p>
+        Where the Customer terminates a Service before the end of the Minimum Term without a contractual
+        right to do so, the Customer may be required to pay an early termination charge.
+    </p>
+
+    <p>
+        Unless otherwise stated in the Order, the early termination charge may include the remaining recurring
+        contractual Fees for the Minimum Term, together with any outstanding Equipment, finance, leasing,
+        third-party, or other committed costs.
+    </p>
+
+    <p>
+        Cancellation before installation or activation may still incur charges where TecSecSolution or its
+        suppliers have already incurred costs or made commitments.
+    </p>
+
+
+    <h2>26. Early Termination Charges</h2>
+
+    <p>
+        Where a Customer terminates a Minimum Term contract early without a valid contractual right to terminate,
+        TecSecSolution may charge an amount representing the reasonable financial consequences of early termination.
+    </p>
+
+    <p>This may include:</p>
+
+    <ul>
+        <li>Remaining monthly recurring charges;</li>
+        <li>Outstanding Equipment costs;</li>
+        <li>Finance or leasing commitments;</li>
+        <li>Third-party cancellation charges;</li>
+        <li>Installation costs;</li>
+        <li>Recovery costs; and</li>
+        <li>Other non-refundable commitments.</li>
+    </ul>
+
+    <p>
+        The Customer acknowledges that Services may be priced on the basis of a Minimum Term and that early
+        termination may cause TecSecSolution to incur costs that would otherwise have been recovered over the Minimum Term.
+    </p>
+
+
+    <h2>27. Service Availability and Service Levels</h2>
+
+    <p>
+        Unless an SLA is expressly agreed in writing, TecSecSolution does not guarantee any specific uptime,
+        response time, resolution time, or service availability.
+    </p>
+
+    <p>
+        Where an SLA applies, any service levels are targets unless expressly stated otherwise.
+    </p>
+
+    <p>
+        Any service credits or remedies available under an SLA shall be the Customer's sole remedy for failure
+        to meet the relevant service level, unless otherwise stated in writing.
+    </p>
+
+    <p>
+        Service credits are not automatically payable unless the applicable SLA expressly provides for them
+        and the Customer satisfies the relevant claim requirements.
+    </p>
+
+
+    <h2>28. Data, Backups and Cybersecurity</h2>
+
+    <p>
+        The Customer remains responsible for maintaining appropriate backups of its data unless a specific
+        backup service has been expressly agreed in writing.
+    </p>
+
+    <p>
+        The Customer is responsible for ensuring that its systems and data comply with applicable legal and regulatory requirements.
+    </p>
+
+    <p>
+        The Customer acknowledges that no IT system, network, cloud service, or cybersecurity solution can be
+        guaranteed to be completely secure.
+    </p>
+
+    <p>
+        Cybersecurity services shall only be provided where expressly included in the Order.
+    </p>
+
+    <p>
+        TecSecSolution shall not be responsible for security incidents arising from customer negligence,
+        weak passwords, unauthorised access, customer misconfiguration, unsupported systems, failure to apply
+        recommended updates, third-party systems, or circumstances outside TecSecSolution's reasonable control.
+    </p>
+
+
+    <h2>29. Acceptable Use of Services</h2>
+
+    <p>The Customer shall not use the Services:</p>
+
+    <ul>
+        <li>For unlawful purposes;</li>
+        <li>For fraudulent activities;</li>
+        <li>To distribute malware;</li>
+        <li>To conduct unauthorised attacks;</li>
+        <li>To interfere with networks;</li>
+        <li>To send unlawful or malicious communications;</li>
+        <li>To make fraudulent or abusive calls;</li>
+        <li>To infringe third-party rights; or</li>
+        <li>In breach of applicable laws or regulations.</li>
+    </ul>
+
+    <p>
+        TecSecSolution may suspend or restrict Services where reasonably necessary to protect its systems,
+        networks, Third-Party Providers, employees, or other customers, or where required by law.
+    </p>
+
+
+    <h2>30. Intellectual Property</h2>
+
+    <p>
+        All intellectual property rights in systems, designs, documentation, methodologies, configurations,
+        templates, software, processes, materials, and other intellectual property created or supplied by
+        TecSecSolution shall remain the property of TecSecSolution or the relevant third-party owner unless
+        expressly transferred in writing.
+    </p>
+
+    <p>
+        The Customer is granted only such rights of use as are necessary to receive and use the Services.
+    </p>
+
+    <p>
+        The Customer shall not copy, reproduce, modify, distribute, reverse engineer, or commercially exploit
+        TecSecSolution's intellectual property without prior written consent.
+    </p>
+
+    <p>
+        Third-party software and cloud services remain subject to the relevant third-party licensing terms.
+    </p>
+
+
+    <h2>31. Non-Solicitation of Staff</h2>
+
+    <p>
+        During the term of the Customer's relationship with TecSecSolution and for a period of
+        <strong>12 months following termination or expiry</strong>, the Customer shall not knowingly solicit,
+        employ, engage, or attempt to engage any employee or contractor of TecSecSolution who has materially
+        provided Services to the Customer.
+    </p>
+
+    <p>
+        This restriction shall not apply where an individual responds to a general recruitment advertisement
+        that is not specifically targeted at TecSecSolution personnel.
+    </p>
+
+    <p>
+        If the Customer breaches this clause, the Customer shall pay TecSecSolution a sum equivalent to
+        <strong>12 months of the relevant individual's gross salary or annualised contractual remuneration</strong>,
+        as applicable, as compensation for the costs and losses associated with the recruitment, replacement,
+        and disruption caused by the breach.
+    </p>
+
+    <p>
+        The parties acknowledge that this provision is intended to protect TecSecSolution's legitimate business
+        interests and should be interpreted subject to applicable law.
+    </p>
+
+
+    <h2>32. Third-Party Services</h2>
+
+    <p>
+        The Services may include or depend upon Third-Party Providers.
+    </p>
+
+    <p>
+        Such services may be subject to separate terms and conditions imposed by the relevant provider.
+    </p>
+
+    <p>
+        The Customer agrees to comply with any applicable third-party terms.
+    </p>
+
+    <p>
+        TecSecSolution shall not be liable for failures, outages, delays, price changes, service changes,
+        or other acts or omissions of Third-Party Providers, except to the extent caused directly by
+        TecSecSolution's own breach of its obligations.
+    </p>
+
+
+    <h2>33. Limitation of Liability</h2>
+
+    <p>
+        To the maximum extent permitted by law, TecSecSolution shall not be liable for:
+    </p>
+
+    <ul>
+        <li>Loss of profit;</li>
+        <li>Loss of revenue;</li>
+        <li>Loss of business;</li>
+        <li>Loss of anticipated savings;</li>
+        <li>Loss of contracts;</li>
+        <li>Loss of goodwill;</li>
+        <li>Loss of reputation;</li>
+        <li>Loss of data;</li>
+        <li>Business interruption; or</li>
+        <li>Any indirect or consequential loss.</li>
+    </ul>
+
+    <p>
+        Nothing in these Terms shall exclude or limit liability for death or personal injury caused by negligence,
+        fraud or fraudulent misrepresentation, any liability that cannot lawfully be excluded or limited, or any
+        other liability that applicable law prevents the parties from excluding.
+    </p>
+
+    <p>
+        Subject to the above, TecSecSolution's total aggregate liability arising out of or in connection with
+        the Services shall, to the maximum extent permitted by law, be limited to the total Fees paid or payable
+        by the Customer to TecSecSolution for the relevant Services during the <strong>1 month immediately
+        preceding the event giving rise to the claim.</strong>
+    </p>
+
+    <p>
+        The Customer acknowledges that the pricing of the Services reflects the allocation of risk and limitations
+        of liability contained in these Terms.
+    </p>
+
+
+    <h2>34. Force Majeure</h2>
+
+    <p>
+        Neither party shall be liable for any failure or delay in performing its obligations where such failure
+        or delay results from circumstances beyond its reasonable control.
+    </p>
+
+    <p>Such circumstances may include:</p>
+
+    <ul>
+        <li>Natural disasters;</li>
+        <li>Severe weather;</li>
+        <li>Fire;</li>
+        <li>Flood;</li>
+        <li>Epidemics or pandemics;</li>
+        <li>War;</li>
+        <li>Terrorism;</li>
+        <li>Civil unrest;</li>
+        <li>Industrial disputes;</li>
+        <li>Power failures;</li>
+        <li>Internet failures;</li>
+        <li>Cyber attacks;</li>
+        <li>Government action;</li>
+        <li>Regulatory changes;</li>
+        <li>Supply chain disruption;</li>
+        <li>Failure of third-party infrastructure; or</li>
+        <li>Other events beyond reasonable control.</li>
+    </ul>
+
+    <p>
+        The affected party shall use reasonable efforts to minimise the impact of the event.
+    </p>
+
+
+    <h2>35. Customer Data and Access</h2>
+
+    <p>
+        Where TecSecSolution requires access to Customer systems to provide Services, the Customer authorises
+        TecSecSolution to access those systems for the purposes of delivering, supporting, maintaining, or
+        troubleshooting the Services.
+    </p>
+
+    <p>
+        The Customer shall ensure that it has the necessary rights and permissions to provide such access.
+    </p>
+
+    <p>
+        The Customer remains responsible for ensuring that its use of the Services complies with applicable
+        data protection and privacy requirements.
+    </p>
+
+    <p>
+        Where TecSecSolution processes personal data on behalf of the Customer, the parties shall comply with
+        applicable UK data protection legislation and, where required, enter into an appropriate data processing agreement.
+    </p>
+
+
+    <h2>36. Complaints</h2>
+
+    <p>
+        The Customer should submit any complaint to TecSecSolution as soon as reasonably practicable.
+    </p>
+
+    <p>
+        TecSecSolution will investigate complaints and seek to resolve them within a reasonable timeframe.
+    </p>
+
+    <p>
+        The Customer shall provide all reasonable information and cooperation required to investigate the complaint.
+    </p>
+
+
+    <h2>37. Changes to Services</h2>
+
+    <p>
+        TecSecSolution may make reasonable changes to the Services where necessary for:
+    </p>
+
+    <ul>
+        <li>Technical reasons;</li>
+        <li>Operational reasons;</li>
+        <li>Security;</li>
+        <li>Regulatory requirements;</li>
+        <li>Network changes;</li>
+        <li>Third-party provider changes; or</li>
+        <li>Service improvements.</li>
+    </ul>
+
+    <p>
+        Where a change is expected to materially affect the Customer, TecSecSolution will provide reasonable notice where practicable.
+    </p>
+
+    <p>
+        Third-Party Providers may independently change their services, infrastructure, technology, pricing, or terms.
+    </p>
+
+
+    <h2>38. Changes to Customer Details</h2>
+
+    <p>The Customer must promptly notify TecSecSolution of any change to:</p>
+
+    <ul>
+        <li>Billing address;</li>
+        <li>Service address;</li>
+        <li>Contact details;</li>
+        <li>Authorised contacts;</li>
+        <li>Company or trading name;</li>
+        <li>Ownership; or</li>
+        <li>Other information relevant to the Services.</li>
+    </ul>
+
+    <p>
+        The Customer remains responsible for ensuring that TecSecSolution has accurate information.
+    </p>
+
+
+    <h2>39. Variation of These Terms</h2>
+
+    <p>
+        TecSecSolution may update or amend these Terms from time to time where reasonably required due to
+        changes in law, regulation, technology, business practices, security requirements, or service arrangements.
+    </p>
+
+    
+
+    <p>
+        No amendment to a specific Order shall take effect unless agreed in accordance with the terms of that Order.
+    </p>
+
+
+    <h2>40. Assignment</h2>
+
+    <p>
+        The Customer may not assign, transfer, novate, or otherwise dispose of its rights or obligations under
+        an Order without TecSecSolution's prior written consent.
+    </p>
+
+    <p>
+        TecSecSolution may assign, transfer, or subcontract its rights or obligations under these Terms to a
+        group company, successor, purchaser of its business, or suitable Third-Party Provider, provided that
+        this does not materially reduce the Customer's contractual rights.
+    </p>
+
+
+    <h2>41. Notices</h2>
+
+    <p>
+        Any formal notice required under these Terms must be provided in writing.
+    </p>
+ <p>
+        Notice of termination of any service is required in writing to be sent 90days in advance.
+    </p>
+
+    <p>
+        Notices may be delivered by email,to the relevant contact details provided by the parties.
+    </p>
+
+    <p>
+        The Customer is responsible for ensuring that TecSecSolution has accurate contact information.
+    </p>
+
+
+    <h2>42. General Provisions</h2>
+
+    <p>
+        If any provision of these Terms is found to be invalid, unlawful, or unenforceable, that provision shall
+        be modified to the minimum extent necessary to make it enforceable, where legally permitted.
+    </p>
+
+    <p>
+        If modification is not possible, the relevant provision shall be severed and the remaining provisions
+        shall continue in full force and effect.
+    </p>
+
+    <p>
+        No failure or delay by TecSecSolution in enforcing any provision shall constitute a waiver of its rights.
+    </p>
+
+    <p>
+        Any waiver must be provided in writing.
+    </p>
+
+    <p>
+        The Customer acknowledges that the Fees and pricing have been calculated on the basis of the risk allocation
+        and limitations of liability contained in these Terms.
+    </p>
+
+
+    <h2>43. Entire Agreement</h2>
+
+    <p>
+        These Terms, together with the relevant Order, quotation, service specification, SLA, and any other document
+        expressly incorporated into the agreement, constitute the entire agreement between TecSecSolution and the
+        Customer in relation to the relevant Services.
+    </p>
+
+    <p>
+        The agreement supersedes all prior discussions, negotiations, correspondence, representations, understandings,
+        or agreements relating to the same subject matter.
+    </p>
+
+    <p>
+        The Customer acknowledges that it has not relied upon any representation not expressly included in the contractual documents.
+    </p>
+
+    <p>
+        Nothing in this clause excludes liability for fraudulent misrepresentation.
+    </p>
+
+
+    <h2>44. Enforcement and Business-to-Business Basis</h2>
+
+    <p>
+        Where the Customer is acting in the course of a business, the Customer acknowledges that these Terms are
+        intended to establish a fair and reasonable allocation of commercial risk between the parties.
+    </p>
+
+    <p>The Customer acknowledges that:</p>
+
+    <ul>
+        <li>It has had the opportunity to review these Terms;</li>
+        <li>It has had the opportunity to obtain independent legal advice;</li>
+        <li>The pricing of the Services reflects the risk allocation contained in these Terms;</li>
+        <li>The Minimum Term and payment obligations form an important part of the commercial agreement; and</li>
+        <li>The liability limitations and cancellation provisions are intended to reflect the commercial nature of the Services.</li>
+    </ul>
+
+    <p>
+        Nothing in these Terms is intended to exclude or restrict any rights or protections that cannot lawfully
+        be excluded or restricted.
+    </p>
+
+
+    <h2>45. Governing Law and Jurisdiction</h2>
+
+    <p>
+        These Terms and any contract between TecSecSolution and the Customer shall be governed by and construed
+        in accordance with the laws of <strong>England and Wales</strong>.
+    </p>
+
+    <p>
+        The courts of England and Wales shall have exclusive jurisdiction over any dispute arising out of or in
+        connection with these Terms or the Services, subject to any mandatory rights or jurisdiction applicable by law.
+    </p>
+
+
+    
+
+       
 
     </div>
-</footer>
+
+
+
+
+
+{% include TecSecSolutionFooter.html %}
 	<script src="script.js"></script>
 </body>
+
 
 
 </html>
