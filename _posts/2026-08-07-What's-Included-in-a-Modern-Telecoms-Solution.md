@@ -1,6 +1,6 @@
 ---
 layout: blogposts
-featured_paragraph: " At TecSecSolution, we help businesses implement reliable VoIP, broadband, networking, IT support, and security solutions designed for modern workplaces."
+featured_paragraph: " Is your current business phone system slowing your company down? Discover the top warning signs that it's time to upgrade to a modern telecoms solution and improve communication, productivity, and customer service."
 
 
 ---
